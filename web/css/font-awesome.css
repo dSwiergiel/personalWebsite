@@ -915,8 +915,8 @@
 .fa-angle-down:before {
   content: "\f107";
 }
-.fa-desktop:before {
-  content: "\f108";
+.fa-blank:before {
+  /* content: "\f108"; */
 }
 .fa-laptop:before {
   content: "\f109";
