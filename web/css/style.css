@@ -339,7 +339,7 @@ body {
     width: 0%;
     height: 4px;
     border-radius: 2px;
-    background: red;
+    background: #4374c1;
     margin-bottom: 10px;
     -webkit-transition: width 1s;
     transition: width 1s;
@@ -508,7 +508,6 @@ body {
 
 /*-- //statistics --*/
 
-
 /*-- experience --*/
 
 .experience {
@@ -635,7 +634,7 @@ body {
 
 .feedback {
     background: url(../images/3.jpg) no-repeat 0px 0px;
-    background: size: cover;
+    background: cover;
 }
 
 .feedback-top {
