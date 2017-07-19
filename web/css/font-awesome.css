@@ -486,9 +486,10 @@
 .fa-minus:before {
   content: "\f068";
 }
-.fa-asterisk:before {
-  content: "\f069";
+.fa-cutlery:before {
+  content: "\f0f5";
 }
+.fa-
 .fa-exclamation-circle:before {
   content: "\f06a";
 }
@@ -541,8 +542,8 @@
 .fa-folder:before {
   content: "\f07b";
 }
-.fa-folder-open:before {
-  content: "\f07c";
+.fa-building:before {
+  content: "\f1ad";
 }
 .fa-arrows-v:before {
   content: "\f07d";
@@ -570,8 +571,8 @@
 .fa-cogs:before {
   content: "\f085";
 }
-.fa-comments:before {
-  content: "\f086";
+.fa-bicycle:before {
+  content: "\f206";
 }
 .fa-thumbs-o-up:before {
   content: "\f087";
@@ -650,8 +651,8 @@
 .fa-bullhorn:before {
   content: "\f0a1";
 }
-.fa-bell:before {
-  content: "\f0f3";
+.fa-shopping-cart:before {
+  content: "\f07a";
 }
 .fa-certificate:before {
   content: "\f0a3";
@@ -857,14 +858,11 @@
 .fa-suitcase:before {
   content: "\f0f2";
 }
-.fa-bell-o:before {
+.fa-shopping-cart-o:before {
   content: "\f0a2";
 }
 .fa-coffee:before {
   content: "\f0f4";
-}
-.fa-cutlery:before {
-  content: "\f0f5";
 }
 .fa-file-text-o:before {
   content: "\f0f6";
@@ -955,7 +953,7 @@
 .fa-folder-o:before {
   content: "\f114";
 }
-.fa-folder-open-o:before {
+.fa-building-o:before {
   content: "\f115";
 }
 .fa-smile-o:before {

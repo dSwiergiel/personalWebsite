@@ -508,6 +508,7 @@ body {
 
 /*-- //statistics --*/
 
+
 /*-- experience --*/
 
 .experience {
@@ -529,7 +530,7 @@ body {
     border-bottom: solid 1px #999999;
 }
 
-.experience-grid-icon i.fa.fa-folder-open, .experience-grid-icon i.fa.fa-bell, .experience-grid-icon i.fa.fa-comments, .experience-grid-icon i.fa.fa-asterisk {
+.experience-grid-icon i.fa.fa-building, .experience-grid-icon i.fa.fa-coffee, .experience-grid-icon i.fa.fa-shopping-cart, .experience-grid-icon i.fa.fa-bicycle, .experience-grid-icon i.fa.fa-cutlery {
     color: #2f2f2f;
     background: none;
     border: solid 2px #4374c1;
@@ -622,7 +623,7 @@ body {
     -ms-transition: 0.5s all;
 }
 
-.experience-grid:hover div i.fa.fa-folder-open, .experience-grid:hover div i.fa.fa-bell, .experience-grid:hover div i.fa.fa-comments, .experience-grid:hover div i.fa.fa-asterisk {
+.experience-grid:hover div i.fa.fa-building, .experience-grid:hover div i.fa.fa-coffee, .experience-grid:hover div i.fa.fa-shopping-cart, .experience-grid:hover div i.fa.fa-bicycle, .experience-grid:hover div i.fa.fa-cutlery {
     color: #FFFFFF;
 }
 
@@ -1313,7 +1314,7 @@ body {
         right: 135px;
         top: 181px;
     }
-    .experience-grid-icon i.fa.fa-folder-open, .experience-grid-icon i.fa.fa-bell, .experience-grid-icon i.fa.fa-comments, .experience-grid-icon i.fa.fa-asterisk {
+    .experience-grid-icon i.fa.fa-building,.experience-grid-icon i.fa.fa-coffee, .experience-grid-icon i.fa.fa-shopping-cart, .experience-grid-icon i.fa.fa-bicycle, .experience-grid-icon i.fa.fa-asterisk {
         width: 80px;
         height: 80px;
         padding: .7em 0 0 0;
