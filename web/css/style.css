@@ -5,6 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 
+
 body a {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -21,11 +22,6 @@ html, body {
 body {
     background: #FFFFFF;
 }
-
-.regularText{
-    font-size: 38px;
-}
-
 
 /*-- banner --*/
 
@@ -244,7 +240,7 @@ body {
     text-align: center;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-facebook, .agileinfo-social-grids ul li a i.fa.fa-twitter, .agileinfo-social-grids ul li a i.fa.fa-rss, .agileinfo-social-grids ul li a i.fa.fa-vk {
+.agileinfo-social-grids ul li a i.fa.fa-facebook, .agileinfo-social-grids ul li a i.fa.fa-instagram, .agileinfo-social-grids ul li a i.fa.fa-github, .agileinfo-social-grids ul li a i.fa.fa-vk {
     height: 30px;
     width: 30px;
     border: solid 2px #FFFFFF;
@@ -264,15 +260,15 @@ body {
     color: #FFFFFF;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-twitter:hover {
-    border: solid 2px #55acee;
-    background: #55acee;
+.agileinfo-social-grids ul li a i.fa.fa-instagram:hover {
+    border: solid 2px #f26522;
+    background: #e2318d;
     color: #FFFFFF;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-rss:hover {
-    border: solid 2px #f26522;
-    background: #f26522;
+.agileinfo-social-grids ul li a i.fa.fa-github:hover {
+    border: solid 2px grey;
+    background: #282828;
     color: #FFFFFF;
 }
 
