@@ -38,7 +38,8 @@ background-size: cover;*/
 #m_nav_container {
     width: 100%;
     height: 200px;
-    background-color: #fff;
+    background-color: black;
+    opacity: 0.8;
     position: fixed;
     display: none;
     /*	opacity: 0;*/
@@ -58,7 +59,7 @@ background-size: cover;*/
 }
 .m_nav_item a {
     text-decoration: none;
-    color: #333;
+    color: white;/* text color*/
     font-size: 1em;
     -webkit-transition-duration: 0.5s;
 }
@@ -116,7 +117,7 @@ In future releases this will be used to animate the m_nav_ham divs to form
 an X*/
 
 .button_open {
-    background: #fff;
+    background: white;
     /*	-webkit-transform: rotate(45deg);*/
 }
 .button_closed {}
