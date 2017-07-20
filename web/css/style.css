@@ -1,9 +1,194 @@
-/*--A Design by W3layouts 
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
+/* Testing */
+
+
+/* Image Zoom  */
+
+.fond{position:absolute;padding-top:85px;top:0;left:0; right:0;bottom:0;
+ background-color:#00506b;}
+
+ /* For the first image on the gallery  */
+
+.zoom_Left_Side
+{
+
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+.zoom_Left_Side:hover
+{
+    position: absolute;
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 1;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.2) translate(30%, 0);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.2) translate(30%, 0);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 200ms ease-in;
+    transform: scale(1.2) translate(30%, 0);
+}
+
+/* Center 2 images  */
+
+.zoom_center
+{
+    display:inline-block;
+
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+  
+  
+
+}
+.zoom_center:hover
+{
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
+/* For the last image on the gallery  */
+
+.zoom_Right_Side
+{
+
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+}
+.zoom_Right_Side:hover
+{
+    position: absolute;
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 1;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.4) translate(-30%, 0);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.4) translate(-30%, 0);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.4);
+    transition: all 200ms ease-in;
+    transform: scale(1.4) translate(-30%, 0);
+}
+
+/* End Image Zoom  */
+
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: lightgray;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+/* End Testing */
+
+/* Tool tip stuff  */
+
+/* Tooltip container */
+.gpaToolTip{
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.gpaToolTip .gpaTipText {
+    visibility: hidden;
+    width: 50px;
+    background-color: #3f3f3f;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 32px;
+    right: 110%;
+
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+/* Tooltip arrow */
+.gpaToolTip .gpaTipText::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%; /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #3f3f3f;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.gpaToolTip:hover .gpaTipText {
+    visibility: visible;
+    opacity: .8;
+}
+
+/* End Tool tip stuff  */
 
 body a {
     transition: 0.5s all;
@@ -735,13 +920,13 @@ body {
 
 .nav-tabs {
     border-bottom: none;
-    margin: 3em auto;
+    margin: 3em auto ;
     width: 34%;
     text-align: center;
 }
 
 .nav-tabs > li {
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .nav-tabs > li > a:hover {
@@ -1149,7 +1334,7 @@ body {
         width: 35%;
     }
     .nav-tabs > li {
-        margin: 0 4px;
+        margin: 10px 4px;
     }
     .w3_tab_img_left {
         width: 50%;
