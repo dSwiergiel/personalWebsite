@@ -1,101 +1,8 @@
-
 /* Testing */
+
 
 /* End Testing */
 
-/* Image Zoom  */
-
- /* For the first image on the gallery  */
-
-.zoom_Left_Side
-{
-
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);   
-
-}
-.zoom_Left_Side:hover
-{
-    position: relative;
-    box-shadow: 0px 0px 150px #000000;
-    z-index: 1;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5) translate(30%, 0);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5) translate(30%, 0);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5) translate(30%, 0);
-}
-
-/* Center 2 images  */
-
-.zoom_center
-{
-    display:inline-block;
-
-    position: relative;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);   
-
-}
-.zoom_center:hover
-{
-    box-shadow: 0px 0px 150px #000000;
-    z-index: 1;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5);
-}
-
-/* For the last image on the gallery  */
-
-.zoom_Right_Side
-{
-
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1); 
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1); 
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);   
-}
-.zoom_Right_Side:hover
-{
-    position: relative;
-    box-shadow: 0px 0px 150px #000000;
-    z-index: 1;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5) translate(-30%, 0);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5) translate(-30%, 0);   
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.5) translate(-30%, 0);
-}
-
-/* End Image Zoom  */
 
 /* Custome Gallery  */
 
@@ -116,7 +23,6 @@ div.desc {
     padding: 15px;
     text-align: center;
     background-color: lightgray;
-
 }
 
 * {
@@ -129,7 +35,7 @@ div.desc {
     width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .responsive {
         width: 100%;
     }
@@ -138,13 +44,17 @@ div.desc {
 
 /* Tool tip stuff  */
 
+
 /* Tooltip container */
-.gpaToolTip{
+
+.gpaToolTip {
     position: relative;
     display: inline-block;
 }
 
+
 /* Tooltip text */
+
 .gpaToolTip .gpaTipText {
     visibility: hidden;
     width: 50px;
@@ -153,36 +63,39 @@ div.desc {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
- 
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
     top: 32px;
     right: 110%;
-
-
     /* Fade in tooltip */
     opacity: 0;
     transition: opacity .5s;
 }
 
+
 /* Tooltip arrow */
+
 .gpaToolTip .gpaTipText::after {
     content: " ";
     position: absolute;
     top: 50%;
-    left: 100%; /* To the right of the tooltip */
+    left: 100%;
+    /* To the right of the tooltip */
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent transparent #3f3f3f;
 }
 
+
 /* Show the tooltip text when you mouse over the tooltip container */
+
 .gpaToolTip:hover .gpaTipText {
     visibility: visible;
     opacity: .8;
 }
+
 
 /* End Tool tip stuff  */
 
@@ -916,7 +829,7 @@ body {
 
 .nav-tabs {
     border-bottom: none;
-    margin: 3em auto ;
+    margin: 3em auto;
     width: 34%;
     text-align: center;
 }
@@ -1323,6 +1236,86 @@ body {
     #m_nav_container {
         height: 230px !important;
     }
+}
+
+
+/* Image Zoom stuff */
+
+@media(min-width: 701px) {
+    /* For the first image on the gallery  */
+    .zoom_Left_Side {
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+    .zoom_Left_Side:hover {
+        position: relative;
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 1;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5) translate(30%, 0);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5) translate(30%, 0);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5) translate(30%, 0);
+    }
+    /* Center 2 images  */
+    .zoom_center {
+        display: inline-block;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+    .zoom_center:hover {
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 1;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5);
+    }
+    /* For the last image on the gallery  */
+    .zoom_Right_Side {
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+    .zoom_Right_Side:hover {
+        position: relative;
+        box-shadow: 0px 0px 150px #000000;
+        z-index: 1;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5) translate(-30%, 0);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5) translate(-30%, 0);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.5) translate(-30%, 0);
+    }
+    /* End Image Zoom  */
 }
 
 @media(max-width:667px) {
