@@ -1,11 +1,9 @@
 
 /* Testing */
 
+/* End Testing */
 
 /* Image Zoom  */
-
-.fond{position:absolute;padding-top:85px;top:0;left:0; right:0;bottom:0;
- background-color:#00506b;}
 
  /* For the first image on the gallery  */
 
@@ -24,17 +22,17 @@
 }
 .zoom_Left_Side:hover
 {
-    position: absolute;
+    position: relative;
     box-shadow: 0px 0px 150px #000000;
     z-index: 1;
     -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.2) translate(30%, 0);
+    -webkit-transform: scale(1.5) translate(30%, 0);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.2) translate(30%, 0);   
+    -ms-transform: scale(1.5) translate(30%, 0);   
     -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.2);
+    -moz-transform: scale(1.5);
     transition: all 200ms ease-in;
-    transform: scale(1.2) translate(30%, 0);
+    transform: scale(1.5) translate(30%, 0);
 }
 
 /* Center 2 images  */
@@ -52,14 +50,12 @@
     -moz-transform: scale(1);
     transition: all 200ms ease-in;
     transform: scale(1);   
-  
-  
 
 }
 .zoom_center:hover
 {
     box-shadow: 0px 0px 150px #000000;
-    z-index: 2;
+    z-index: 1;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.5);
     -ms-transition: all 200ms ease-in;
@@ -86,21 +82,22 @@
 }
 .zoom_Right_Side:hover
 {
-    position: absolute;
+    position: relative;
     box-shadow: 0px 0px 150px #000000;
     z-index: 1;
     -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.4) translate(-30%, 0);
+    -webkit-transform: scale(1.5) translate(-30%, 0);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.4) translate(-30%, 0);   
+    -ms-transform: scale(1.5) translate(-30%, 0);   
     -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.4);
+    -moz-transform: scale(1.5);
     transition: all 200ms ease-in;
-    transform: scale(1.4) translate(-30%, 0);
+    transform: scale(1.5) translate(-30%, 0);
 }
 
 /* End Image Zoom  */
 
+/* Custome Gallery  */
 
 div.gallery {
     border: 1px solid #ccc;
@@ -138,7 +135,6 @@ div.desc {
     }
 }
 
-/* End Testing */
 
 /* Tool tip stuff  */
 
