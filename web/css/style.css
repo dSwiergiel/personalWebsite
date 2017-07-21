@@ -8,7 +8,6 @@
 
 div.gallery {
     border: 1px solid #ccc;
-    
 }
 
 div.gallery:hover {
@@ -37,24 +36,33 @@ div.desc {
 }
 
 .paragraph {
-
-    max-width: 1300px;
+    margin-top: 20px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-size: 25px;
-    color: lightgray;
-
-
+    color: grey;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
     .responsive {
         width: 100%;
     }
 }
 
+
 /* //Custome Gallery  */
+
+.border {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 1240px;
+    border-spacing: 10px;
+    border-top: solid 2px #999999;
+}
+
 
 /* Tool tip stuff  */
 
@@ -1255,7 +1263,7 @@ body {
 
 /* Image Zoom stuff */
 
-@media(min-width: 701px) {
+@media(min-width: 1201px) {
     /* For the first image on the gallery  */
     .zoom_Left_Side {
         -webkit-transition: all 200ms ease-in;
