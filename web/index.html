@@ -36,21 +36,36 @@ Author: Deven Swiergiel
 	<!-- menu -->
 	<link rel="stylesheet" href="css/main.css">
 	<script type="text/javascript" src="js/main.js"></script>
-	<!-- //menu -->
-	<script>
-		$(document).ready(function () {
-			$("#owl-demo").owlCarousel({
 
-				autoPlay: 3000, //Set AutoPlay to 3 seconds
-				autoPlay: true,
-				items: 3,
-				itemsDesktop: [640, 5],
-				itemsDesktopSmall: [414, 4]
+			<script>
+			$(window).bind('scroll', function () {
 
+				if($(window).width() > 1200){
+
+				if ($(window).scrollTop() < 75) {
+					$('#toggle_m_nav').hide();
+				}
+				else {
+					$('#toggle_m_nav').show();
+				}
+				} else {
+					$('#toggle_m_nav').show();
+				}
 			});
 
-		});
-	</script>
+			$(window).bind('resize', function () {
+				if($(window).width() < 1200){
+					$('#toggle_m_nav').show();
+					$('#largeMenu').hide();
+				}
+				else {
+					$('#toggle_m_nav').hide();
+					$('#m_nav_container').hide();
+					$('#largeMenu').show();
+				}
+			});
+		</script>
+	<!-- //menu -->
 
 </head>
 
@@ -66,6 +81,9 @@ Author: Deven Swiergiel
 			</div>
 		</div>
 
+		<!--hides the menu button until main menu is out of sight  -->
+
+
 		<div id="m_nav_container" class="m_nav">
 			<ul id="m_nav_list" class="m_nav">
 				<li class="m_nav_item" id="m_nav_item_1"> <a href="#home">Home</a> </li>
@@ -76,11 +94,36 @@ Author: Deven Swiergiel
 				<li class="m_nav_item" id="moble_nav_item_6"> <a href="#contact">Contact</a> </li>
 			</ul>
 		</div>
-		<!-- menu -->
+
+		<script>
+			$(window).bind('scroll', function () {
+				if ($(window).scrollTop() < 75) {
+					$('#m_nav_container').hide();
+				}
+
+			});
+		</script>
+
 		<div class="container">
-			<div class="agile-logo">
-				<h1><a href="index.html">Deven<span>Swiergiel</span></a></h1>
+
+			<div class="agile-logo" style="position:relative;">
+				<h1 style="display: inline-block;"><a href="index.html">Deven<span>Swiergiel</span></a></h1>
 			</div>
+
+			<div id="largeMenu" style="margin-left: 300px; position: absolute; width: 1000px; top: 20px;">
+				<ul id="m_nav_list" class="m_nav">
+					<li class="m_nav_item" id="m_nav_item_1"> <a href="#home">Home</a> </li>
+					<li class="m_nav_item" id="moble_nav_item_2"> <a href="#about">About</a> </li>
+					<li class="m_nav_item" id="moble_nav_item_3"> <a href="#statistics">Education</a> </li>
+					<li class="m_nav_item" id="moble_nav_item_4"> <a href="#experience">Experience</a> </li>
+					<li class="m_nav_item" id="moble_nav_item_5"> <a href="#projects">Projects</a> </li>
+					<li class="m_nav_item" id="moble_nav_item_6"> <a href="#contact">Contact</a> </li>
+				</ul>
+			</div>
+
+
+			<!-- menu -->
+
 			<div class="w3l-banner-grids">
 				<!--				<div class="col-md-8 w3ls-banner-right"> this should be used if the Job title, name, and sex column is used. Otherwise use col-md-12-->
 				<div class="col-md-12">
@@ -203,7 +246,7 @@ Author: Deven Swiergiel
 				</div>
 				<div class="agile-statistics-grids">
 
-					<div id="educationTop" class="col-sm-4 agile-statistics-grid ">
+					<div id="educationTop" class="col-sm-4 agile-statistics-grid gpaToolTip">
 						<h4>Schenectady County Community College</h4>
 						<div class="gpaToolTip">
 							<span class="gpaTipText">GPA</span>
@@ -213,7 +256,7 @@ Author: Deven Swiergiel
 							<br> August 2013 - May 2014
 						</p>
 					</div>
-					<div id="educationMiddle" class="col-sm-4 agile-statistics-grid ">
+					<div id="educationMiddle" class="col-sm-4 agile-statistics-grid gpaToolTip">
 						<h4>Hudson Valley Community College</h4>
 						<div class="gpaToolTip">
 							<span class="gpaTipText">GPA</span>
@@ -224,7 +267,7 @@ Author: Deven Swiergiel
 						</p>
 					</div>
 					<div></div>
-					<div id="educationBottom" class="col-sm-4 agile-statistics-grid">
+					<div id="educationBottom" class="col-sm-4 agile-statistics-grid gpaToolTip">
 						<h4>University at Albany<br>
 							<br>
 						</h4>
@@ -332,7 +375,7 @@ Author: Deven Swiergiel
 		<div class="projects" id="projects">
 			<div class="container">
 				<div class="border" style="margin-bottom: 40px;"></div>
-				<div class="w3-agileits-statistics-heading experience-heading" >
+				<div class="w3-agileits-statistics-heading experience-heading">
 					<h3>My Projects</h3>
 				</div>
 			</div>
@@ -345,15 +388,16 @@ Author: Deven Swiergiel
 					<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Templates</a></li>
 					<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Other</a></li>
 				</ul>
+				<div class="container">
+					<div class="border"></div>
+				</div>
 				<div id="myTabContent" class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
 						<div class="w3_tab_img">
+
 							<div class="container">
-							<div class="border"></div>
-							</div>
-							<div class="container">
-								<p class="paragraph">This is a web applicaiton myself a small group of developers have been working on. I am responsible for the front
-									end and back end of the parts pictured above. This will be used by New York State ITS employees to manage our use
+								<p class="paragraph">This is a web applicaiton myself and a small group of developers have been working on. I am responsible for the front
+									end and back end of the parts pictured below. This will be used by New York State ITS employees to manage our use
 									of IBM's FileNet. It was built using Angular 4 and Bootstrap for the front end, and C#, .net, Rest API, and Entity
 									for the backend.</p>
 							</div>
@@ -382,7 +426,7 @@ Author: Deven Swiergiel
 									<a target="_blank" href="images/Database.png">
 									<img src="images/Database.png" alt="Northern Lights" width="600" height="600">
 									</a>
-									<div class="desc">This version works well! make sure to change the pictures in all tabs!!!!</div>
+									<div class="desc">This shows all the databases within the system. There will be many more once this goes live.</div>
 								</div>
 							</div>
 
@@ -391,7 +435,7 @@ Author: Deven Swiergiel
 									<a target="_blank" href="images/Responsive.png">
 									<img src="images/Responsive.png" alt="Mountains" width="600" height="600">
 									</a>
-									<div class="desc">This version works well! make sure to change the pictures in all tabs!!!!</div>
+									<div class="desc">Responsive pages shown in mobile form-factor.</div>
 								</div>
 							</div>
 
@@ -557,7 +601,7 @@ Author: Deven Swiergiel
 		</div>
 		<!-- //projects -->
 		<!-- map -->
-<!-- 
+		<!-- 
 		<div class="map-grid">
 			<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=albany&key=AIzaSyBvt8Xz24WPox_ALQSzIwPjw1jwyVH4UV0"
 			 allowfullscreen></iframe>
@@ -565,7 +609,7 @@ Author: Deven Swiergiel
 
 		<!-- //map -->
 		<!-- contact -->
-		<div class="contact" style="padding-top: 0px;"id="contact">
+		<div class="contact" style="padding-top: 0px;" id="contact">
 			<div class="container">
 				<div class="w3-agileits-statistics-heading experience-heading">
 					<h3 style="margin-bottom: 10px;">Contact Me</h3>

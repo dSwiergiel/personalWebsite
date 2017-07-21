@@ -22,7 +22,7 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-    background-color: lightgray;
+    background-color: white;
 }
 
 * {
@@ -37,6 +37,7 @@ div.desc {
 
 .paragraph {
     margin-top: 20px;
+    margin-bottom: 35px;
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
@@ -78,8 +79,7 @@ div.desc {
 /* Tooltip text */
 
 .gpaToolTip .gpaTipText {
-    visibility: hidden;
-    width: 50px;
+    width: 80px;
     background-color: #3f3f3f;
     color: #fff;
     text-align: center;
@@ -88,26 +88,11 @@ div.desc {
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: 32px;
-    right: 110%;
+    top: 35px;
+    left: 10%;
     /* Fade in tooltip */
     opacity: 0;
     transition: opacity .5s;
-}
-
-
-/* Tooltip arrow */
-
-.gpaToolTip .gpaTipText::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    /* To the right of the tooltip */
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent transparent #3f3f3f;
 }
 
 
@@ -1074,6 +1059,10 @@ body {
     .nav-tabs {
         width: 38%;
     }
+    #m_nav_container {
+        text-align: center !important;
+        box-shadow: 0 0 2px #000 !important;
+    }
 }
 
 @media(max-width:1366px) {
@@ -1097,17 +1086,31 @@ body {
     }
 }
 
+@media(min-width: 1200px){
+        #m_nav_list {
+        margin: 2em 0 0 0 !important;
+    }
+}
+
 @media(max-width: 1199px) {
     #buttonCluster.banner-right-info {
         margin: 2em 0 0 0;
     }
+
 }
+
 
 @media(min-width: 991px) and (max-width: 1199px) {
     #buttonCluster {
         float: left;
         width: 100%;
         margin: 1em 0 0 0;
+    }
+}
+
+@media(max-width: 1150px){
+        #m_nav_list {
+        margin: .5em 0 0 0 !important;
     }
 }
 
@@ -1122,9 +1125,7 @@ body {
         text-align: center !important;
         box-shadow: 0 0 2px #000 !important;
     }
-    #m_nav_list {
-        margin: 0.5em 0 0 0 !important;
-    }
+
     .nav-tabs {
         margin: 1em auto;
     }
@@ -1182,7 +1183,7 @@ body {
         width: 30%;
     }
     #m_nav_menu {
-        right: 120px!important;
+        right: 100px!important;
     }
     .wthree-about-right {
         margin: 2em 0 0 0;
