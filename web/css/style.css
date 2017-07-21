@@ -8,6 +8,7 @@
 
 div.gallery {
     border: 1px solid #ccc;
+    
 }
 
 div.gallery:hover {
@@ -35,12 +36,25 @@ div.desc {
     width: 24.99999%;
 }
 
+.paragraph {
+
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 25px;
+    color: lightgray;
+
+
+}
+
 @media only screen and (max-width: 700px) {
     .responsive {
         width: 100%;
     }
 }
 
+/* //Custome Gallery  */
 
 /* Tool tip stuff  */
 
@@ -379,7 +393,7 @@ body {
 /*-- about --*/
 
 .about, .statistics, .experience, .feedback, .projects, .contact {
-    padding: 4em 0;
+    padding: 4em 0 4em 0;
 }
 
 .wthree-about-left h3, .wthree-about-right h3, .w3-agileits-statistics-heading h3 {
@@ -829,7 +843,7 @@ body {
 
 .nav-tabs {
     border-bottom: none;
-    margin: 3em auto;
+    margin: 1em auto 2em auto;
     width: 34%;
     text-align: center;
 }
