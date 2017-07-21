@@ -38,7 +38,8 @@ Author: Deven Swiergiel
 	<script type="text/javascript" src="js/main.js"></script>
 
 			<script>
-			$(window).bind('scroll', function () {
+				
+			$(window).bind('scroll load', function () {
 
 				if($(window).width() > 1200){
 
@@ -53,7 +54,7 @@ Author: Deven Swiergiel
 				}
 			});
 
-			$(window).bind('resize', function () {
+			$(window).bind('resize load', function () {
 				if($(window).width() < 1200){
 					$('#toggle_m_nav').show();
 					$('#largeMenu').hide();
@@ -69,7 +70,7 @@ Author: Deven Swiergiel
 
 </head>
 
-<body>
+<body onload="mainMenu()">
 	<!-- banner -->
 	<div class="banner" id="home">
 		<!-- menu -->
@@ -324,7 +325,7 @@ Author: Deven Swiergiel
 							<div class="experience-grid-info">
 								<h5>Hannaford Supermarkets
 									<br> May 2014 - March 2017</h5>
-								<p>Worked as a deli associate preparing salad bar, wing bar, and olive bar as well as of course slicing cold cuts for
+								<p>Worked as a deli associate preparing salad bar, wing bar, and olive bar as well as, of course, slicing cold cuts for
 									customers.
 								</p>
 							</div>
@@ -336,7 +337,7 @@ Author: Deven Swiergiel
 							<div class="experience-grid-info">
 								<h5>Freeman's Bridge Sports
 									<br>June 2015 - February 2016</h5>
-								<p>Worked as a sales associate selling bicycles as well as a bicycle mechanic repairing customer bicycles.</p>
+								<p>Worked as a sales associate as well as a bicycle mechanic selling and repairing bicycles.</p>
 							</div>
 						</div>
 						<div class="clearfix"> </div>
@@ -609,6 +610,17 @@ Author: Deven Swiergiel
 
 		<!-- //map -->
 		<!-- contact -->
+		<div style="height: 400px;">
+					<div class="w3-agileits-statistics-heading experience-heading">
+					<h3 style="margin-bottom: 40px;">Contact Me</h3>
+					
+				</div>
+			<h2 class="centered" style="text-align: center;">This section of the website is under construciton.</h2>
+			<h3 style="text-align: center;">In the mean time you can Email me at Devenswiergiel@gmail.com</h1>
+		</div>
+
+		
+<!-- 		IN DEVELOPMENT!!
 		<div class="contact" style="padding-top: 0px;" id="contact">
 			<div class="container">
 				<div class="w3-agileits-statistics-heading experience-heading">
@@ -649,7 +661,9 @@ Author: Deven Swiergiel
 					</form>
 				</div>
 			</div>
-		</div>
+		</div> 
+	 -->
+	
 		<!-- //contact -->
 		<!-- copyright -->
 		<div class="agileits-w3layouts-footer">
