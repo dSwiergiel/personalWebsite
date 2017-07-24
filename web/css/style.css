@@ -842,7 +842,8 @@ body {
 }
 
 .nav-tabs > li {
-    margin: 10px 10px;
+     margin: 10px 10px; 
+
 }
 
 .nav-tabs > li > a:hover {

@@ -37,11 +37,10 @@ Author: Deven Swiergiel
 	<link rel="stylesheet" href="css/main.css">
 	<script type="text/javascript" src="js/main.js"></script>
 
-			<script>
-				
-			$(window).bind('scroll load', function () {
+	<script>
+		$(window).bind('scroll load', function () {
 
-				if($(window).width() > 1200){
+			if ($(window).width() > 1200) {
 
 				if ($(window).scrollTop() < 75) {
 					$('#toggle_m_nav').hide();
@@ -49,23 +48,23 @@ Author: Deven Swiergiel
 				else {
 					$('#toggle_m_nav').show();
 				}
-				} else {
-					$('#toggle_m_nav').show();
-				}
-			});
+			} else {
+				$('#toggle_m_nav').show();
+			}
+		});
 
-			$(window).bind('resize load', function () {
-				if($(window).width() < 1200){
-					$('#toggle_m_nav').show();
-					$('#largeMenu').hide();
-				}
-				else {
-					$('#toggle_m_nav').hide();
-					$('#m_nav_container').hide();
-					$('#largeMenu').show();
-				}
-			});
-		</script>
+		$(window).bind('resize load', function () {
+			if ($(window).width() < 1200) {
+				$('#toggle_m_nav').show();
+				$('#largeMenu').hide();
+			}
+			else {
+				$('#toggle_m_nav').hide();
+				$('#m_nav_container').hide();
+				$('#largeMenu').show();
+			}
+		});
+	</script>
 	<!-- //menu -->
 
 </head>
@@ -325,8 +324,8 @@ Author: Deven Swiergiel
 							<div class="experience-grid-info">
 								<h5>Hannaford Supermarkets
 									<br> May 2014 - March 2017</h5>
-								<p>Worked as a deli associate preparing salad bar, wing bar, and olive bar as well as, of course, slicing cold cuts for
-									customers.
+								<p>Worked as a deli associate preparing salad bar, wing bar, and olive bar as well as, of course, slicing cold cuts
+									for customers.
 								</p>
 							</div>
 						</div>
@@ -382,12 +381,12 @@ Author: Deven Swiergiel
 			</div>
 
 			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-				<ul id="myTab" class="nav nav-tabs" role="tablist">
+				<ul id="myTab" class="nav nav-tabs"  role="tablist">
 					<li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Most Recent</a></li>
-					<li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">Apps</a></li>
-					<li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Widgets</a></li>
+					<li role="presentation"><a href="#WeightConverter" role="tab" id="WeightConverter-tab" data-toggle="tab" aria-controls="learning">Weight Converter</a></li>
+					<!-- <li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">Widgets</a></li>
 					<li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Templates</a></li>
-					<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Other</a></li>
+					<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Other</a></li> -->
 				</ul>
 				<div class="container">
 					<div class="border"></div>
@@ -396,6 +395,7 @@ Author: Deven Swiergiel
 					<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
 						<div class="w3_tab_img">
 
+							<!-- most recent tab  -->
 							<div class="container">
 								<p class="paragraph">This is a web applicaiton myself and a small group of developers have been working on. I am responsible for the front
 									end and back end of the parts pictured below. This will be used by New York State ITS employees to manage our use
@@ -406,7 +406,7 @@ Author: Deven Swiergiel
 							<div class="responsive">
 								<div class="gallery zoom_Left_Side">
 									<a target="_blank" href="images/Contacts_Edit.png">
-								<img src="images/Contacts_Edit.png" alt="Trolltunga Norway" width="600" height="auto">
+								<img src="images/Contacts_Edit.png" alt="Contects edit page" width="600" height="auto">
 								</a>
 									<div class="desc">This page allows you to edit contacts and see the Object Stores associated with that contact.</div>
 								</div>
@@ -416,7 +416,7 @@ Author: Deven Swiergiel
 							<div class="responsive">
 								<div class="gallery zoom_center">
 									<a target="_blank" href="images/Contacts.png">
-									<img src="images/Contacts.png" alt="Forest" width="600" height="auto">
+									<img src="images/Contacts.png" alt="Contacts page" width="600" height="auto">
 									</a>
 									<div class="desc">This shows all the contacts within the system. There will be hundreds once this goes live.</div>
 								</div>
@@ -425,7 +425,7 @@ Author: Deven Swiergiel
 							<div class="responsive">
 								<div class="gallery zoom_center">
 									<a target="_blank" href="images/Database.png">
-									<img src="images/Database.png" alt="Northern Lights" width="600" height="600">
+									<img src="images/Database.png" alt="Database page" width="600" height="600">
 									</a>
 									<div class="desc">This shows all the databases within the system. There will be many more once this goes live.</div>
 								</div>
@@ -434,7 +434,7 @@ Author: Deven Swiergiel
 							<div class="responsive">
 								<div class="gallery zoom_Right_Side">
 									<a target="_blank" href="images/Responsive.png">
-									<img src="images/Responsive.png" alt="Mountains" width="600" height="600">
+									<img src="images/Responsive.png" alt="Image of all pages on mobile device" width="600" height="600">
 									</a>
 									<div class="desc">Responsive pages shown in mobile form-factor.</div>
 								</div>
@@ -446,84 +446,49 @@ Author: Deven Swiergiel
 						</div>
 					</div>
 
-					<div role="tabpanel" class="tab-pane fade" id="learning" aria-labelledby="learning-tab">
+					<!-- Weight Converter Tab -->
+					<div role="tabpanel" class="tab-pane fade" id="WeightConverter" aria-labelledby="WeightConverter-tab">
 						<div class="w3_tab_img">
+
+							<div class="container">
+								<p class="paragraph">This is a small web application that I made one morning. It uses Bootstrap for styling and basic logic for the conversions.
+									The app is fully respnsive for mobile optimization.
+									<a target="_blank" href="http://www.devenswiergiel.com/weightconverter.html">Click here to try it out!</a></div> </p>
+							</div>
+
 							<div class="responsive">
 								<div class="gallery zoom_Left_Side">
-									<a target="_blank" href="images/p9.jpg">
-								<img src="images/p9.jpg" alt="Trolltunga Norway" width="300" height="200">
+									<a target="_blank" href="images/HomeScreen.png">
+								<img src="images/HomeScreen.png" alt="Home screen of app" width="400" height="400">
 								</a>
-									<div class="desc">This version works well! make sure to change the pictures in all tabs!!!!</div>
+									<div class="desc">This is the home screen of the app.</div>
 								</div>
 							</div>
 
 							<div class="responsive">
 								<div class="gallery zoom_center">
-									<a target="_blank" href="images/p3.jpg">
-									<img src="images/p3.jpg" alt="Forest" width="600" height="400">
+									<a target="_blank" href="images/Select_weight.png">
+									<img src="images/Select_weight.png" alt="Select weight to convert to image" width="400" height="400">
 									</a>
-									<div class="desc">Add a description of the image here</div>
+									<div class="desc">Select from a dropdown what unit you want convert.</div>
 								</div>
 							</div>
 
 							<div class="responsive">
 								<div class="gallery zoom_center">
-									<a target="_blank" href="images/p4.jpg">
-									<img src="images/p4.jpg" alt="Northern Lights" width="600" height="400">
+									<a target="_blank" href="images/Weight_Selected.png">
+									<img src="images/Weight_Selected.png" alt="unit selected" width="400" height="400">
 									</a>
-									<div class="desc">Add a description of the image here</div>
+									<div class="desc">After unit has been selected, enter a weight to convert.</div>
 								</div>
 							</div>
-
+							
 							<div class="responsive">
 								<div class="gallery zoom_Right_Side">
-									<a target="_blank" href="images/p5.jpg">
-									<img src="images/p5.jpg" alt="Mountains" width="600" height="400">
-									</a>
-									<div class="desc">Add a description of the image here</div>
-								</div>
-							</div>
-
-
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					<div role="tabpanel" class="tab-pane fade" id="playing" aria-labelledby="playing-tab">
-						<div class="w3_tab_img">
-							<div class="responsive">
-								<div class="gallery zoom_Left_Side">
-									<a target="_blank" href="images/p2.jpg">
-								<img src="images/p2.jpg" alt="Trolltunga Norway" width="300" height="200">
+									<a target="_blank" href="images/Converted.png">
+								<img src="images/Converted.png" alt="Converted weight in app" width="400" height="400">
 								</a>
-									<div class="desc">This version works well! make sure to change the pictures in all tabs!!!!</div>
-								</div>
-							</div>
-
-
-							<div class="responsive">
-								<div class="gallery zoom_center">
-									<a target="_blank" href="images/p3.jpg">
-									<img src="images/p3.jpg" alt="Forest" width="600" height="400">
-									</a>
-									<div class="desc">Add a description of the image here</div>
-								</div>
-							</div>
-
-							<div class="responsive">
-								<div class="gallery zoom_center">
-									<a target="_blank" href="images/p4.jpg">
-									<img src="images/p4.jpg" alt="Northern Lights" width="600" height="400">
-									</a>
-									<div class="desc">Add a description of the image here</div>
-								</div>
-							</div>
-
-							<div class="responsive">
-								<div class="gallery zoom_Right_Side">
-									<a target="_blank" href="images/p5.jpg">
-									<img src="images/p5.jpg" alt="Mountains" width="600" height="400">
-									</a>
-									<div class="desc">Add a description of the image here</div>
+									<div class="desc">This is what it looks like once the weight has been converted.</div>
 								</div>
 							</div>
 
@@ -531,63 +496,7 @@ Author: Deven Swiergiel
 							<div class="clearfix"> </div>
 						</div>
 					</div>
-					<div role="tabpanel" class="tab-pane fade" id="painting" aria-labelledby="painting-tab">
-						<div class="w3_tab_img">
-							<div class="responsive">
-								<div class="gallery zoom_Left_Side">
-									<a target="_blank" href="images/p2.jpg">
-								<img src="images/p2.jpg" alt="Trolltunga Norway" width="300" height="200">
-								</a>
-									<div class="desc">This version works well! make sure to change the pictures in all tabs!!!!</div>
-								</div>
-							</div>
 
-
-							<div class="responsive">
-								<div class="gallery zoom_center">
-									<a target="_blank" href="images/p10.jpg">
-									<img src="images/p10.jpg" alt="Forest" width="600" height="400">
-									</a>
-									<div class="desc">Add a description of the image here</div>
-								</div>
-							</div>
-
-							<div class="responsive">
-								<div class="gallery zoom_center">
-									<a target="_blank" href="images/p6.jpg">
-									<img src="images/p6.jpg" alt="Northern Lights" width="600" height="400">
-									</a>
-									<div class="desc">Add a description of the image here</div>
-								</div>
-							</div>
-
-							<div class="responsive">
-								<div class="gallery zoom_Right_Side">
-									<a target="_blank" href="images/p9.jpg">
-									<img src="images/p9.jpg" alt="Mountains" width="600" height="400">
-									</a>
-									<div class="desc">Add a description of the image here</div>
-								</div>
-							</div>
-
-
-							<div class="clearfix"> </div>
-						</div>
-					</div>
-					<div role="tabpanel" class="tab-pane fade" id="school" aria-labelledby="school-tab">
-						<div class="w3_tab_img">
-							<div class="responsive">
-								<div class="gallery zoom_Left_Side">
-									<a target="_blank" href="images/p7.jpg">
-									<img src="images/p7.jpg" alt="Mountains" width="600" height="400">
-									</a>
-									<div class="desc">Add a description of the image here</div>
-								</div>
-							</div>
-
-							<div class="clearfix"> </div>
-						</div>
-					</div>
 				</div>
 			</div>
 			<script src="js/jquery.tools.min.js"></script>
@@ -610,17 +519,17 @@ Author: Deven Swiergiel
 
 		<!-- //map -->
 		<!-- contact -->
-		<div style="height: 400px;">
-					<div class="w3-agileits-statistics-heading experience-heading">
-					<h3 style="margin-bottom: 40px;">Contact Me</h3>
-					
-				</div>
+		<div  id="contact"style="height: 400px;">
+			<div class="w3-agileits-statistics-heading experience-heading">
+				<h3 style="margin-bottom: 40px;">Contact Me</h3>
+
+			</div>
 			<h2 class="centered" style="text-align: center;">This section of the website is under construciton.</h2>
 			<h3 style="text-align: center;">In the mean time you can Email me at Devenswiergiel@gmail.com</h1>
 		</div>
 
-		
-<!-- 		IN DEVELOPMENT!!
+
+		<!-- 		IN DEVELOPMENT!!
 		<div class="contact" style="padding-top: 0px;" id="contact">
 			<div class="container">
 				<div class="w3-agileits-statistics-heading experience-heading">
@@ -663,7 +572,7 @@ Author: Deven Swiergiel
 			</div>
 		</div> 
 	 -->
-	
+
 		<!-- //contact -->
 		<!-- copyright -->
 		<div class="agileits-w3layouts-footer">
