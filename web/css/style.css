@@ -341,7 +341,8 @@ body {
     text-align: center;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-facebook, .agileinfo-social-grids ul li a i.fa.fa-instagram, .agileinfo-social-grids ul li a i.fa.fa-github, .agileinfo-social-grids ul li a i.fa.fa-vk {
+/* Find me icon transitions  */
+.agileinfo-social-grids ul li a i.fa.fa-facebook, .agileinfo-social-grids ul li a i.fa.fa-linkedin, .agileinfo-social-grids ul li a i.fa.fa-instagram, .agileinfo-social-grids ul li a i.fa.fa-github{
     height: 30px;
     width: 30px;
     border: solid 2px #FFFFFF;
@@ -373,12 +374,13 @@ body {
     color: #FFFFFF;
 }
 
-.agileinfo-social-grids ul li a i.fa.fa-vk:hover {
-    border: solid 2px #45668e;
-    background: #45668e;
+.agileinfo-social-grids ul li a i.fa.fa-linkedin:hover {
+    border: solid 2px #0077B5;
+    background: #0077B5;
     color: #FFFFFF;
 }
 
+/* //Find me icon transitions  */
 
 /*-- //banner --*/
 
