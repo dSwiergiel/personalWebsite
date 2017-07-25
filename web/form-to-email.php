@@ -31,10 +31,10 @@ $email_body = "You have received a new message from your website.\n\n".
 $message \n\n".
 
 "Their info: 
- Name: $name. 
- Email: $visitor_email.
- Phone: $phone  . 
- Conpany: $company  . \n\n";
+Name: $name. 
+Email: $visitor_email.
+Phone: $phone  . 
+Conpany: $company  . \n\n";
     
 $to = "devenswiergiel@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";

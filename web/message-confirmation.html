@@ -55,7 +55,7 @@ Author: Deven Swiergiel
     <!--For redirect back to main page.  -->
     <script>
         setTimeout(function () {
-            window.location = "http://www.devenswiergiel.com"; //will redirect to your blog page (an ex: blog.html)
+            window.location = "http://devenswiergiel.com"; //will redirect to your blog page (an ex: blog.html)
         }, 7000); //will call the function after 2 secs.
 
         var seconds_left = 7;
@@ -75,13 +75,9 @@ Author: Deven Swiergiel
 
     <style>
         .centered {
-
-            position: fixed;
-            top: 40%;
-            left: 50%;
-            /* bring your own prefixes */
-            transform: translate(-50%, -50%);
+            display: block;
             text-align: center;
+            margin-top: 20%;
         }
 
         #timer_div {
@@ -92,11 +88,11 @@ Author: Deven Swiergiel
         }
     </style>
 
-    <div>
-        <h2 class="centered">Thank you for contacting me!<br>I will get back to you as soon as possible.<br><br>You will be redirected back to
+    <div class="centered">
+        <h2 >Thank you for contacting me!<br>I will get back to you as soon as possible.<br><br>You will be redirected back to
             the main site in: </h2>
 
-        <div id="timer_div" style="top: 50%;" class="centered"></div>
+        <div id="timer_div"  class="centered"></div>
     </div>
 
 </body>
