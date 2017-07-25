@@ -40,6 +40,21 @@
 @media(max-width: 500px){
     .modal-content{
         width: 80%;
+        font-size: 18px;
+    }
+
+    .modal{
+        padding-top: 25%;
+    }
+}
+@media(max-width: 340px){
+    .modal-content{
+        width: 95%;
+        font-size: 18px;
+    }
+
+    .modal{
+        padding-top: 25%;
     }
 }
 
