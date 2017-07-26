@@ -1598,7 +1598,7 @@ body {
         width: 95%;
     }
     .nav-tabs {
-        margin: 1em auto 0;
+        margin: 1em 1em .2em;
     }
     .map-grid iframe {
         height: 200px;
@@ -1642,9 +1642,6 @@ body {
 @media(max-width:375px) {
     .statistics-grid2:before {
         left: 162px;
-    }
-    .nav-tabs > li {
-        margin: 3px 4px;
     }
     .w3_tab_img_left {
         width: 100%;

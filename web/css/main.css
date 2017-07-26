@@ -85,7 +85,7 @@ background-size: cover;*/
     z-index: 3;
     cursor: pointer;
     padding: .5em;
-    background: rgba(130, 130, 130, 0.46);
+    background: rgba(0, 0, 0, 0.5);
 }
 /*class applied to create the lines*/
 
