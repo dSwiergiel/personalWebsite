@@ -676,9 +676,13 @@ body {
 
 /*-- education --*/
 
-.statistics {
+.education {
     background: url(../images/6.jpg) no-repeat 0px 0px;
     background-size: cover;
+}
+
+bannerBackground {
+    
 }
 
 .jarallax {
