@@ -259,7 +259,7 @@ body {
 .mainMenu {
     margin-left: 300px;
     position: absolute;
-    max-width: 900px;
+    max-width: 900px; 
     top: 20px;
 }
 
