@@ -3,73 +3,103 @@
 
 /* End Testing */
 
+
 /* popup modal for QR code version of site  */
 
+
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
     opacity: .9;
-    
 }
 
+
 /* Modal Content */
+
 .modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     max-width: 600px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
 }
 
+
 /* For mobile devices  */
-@media(max-width: 500px){
-    .modal-content{
+
+@media(max-width: 500px) {
+    .modal-content {
         width: 80%;
         font-size: 18px;
     }
-
-    .modal{
+    .modal {
         padding-top: 25%;
     }
 }
-@media(max-width: 340px){
-    .modal-content{
+
+@media(max-width: 340px) {
+    .modal-content {
         width: 95%;
         font-size: 18px;
     }
-
-    .modal{
+    .modal {
         padding-top: 25%;
     }
 }
 
+
 /* Add Animation */
+
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
+
 /* The Close Button */
+
 .close {
     color: white;
     opacity: 1;
@@ -78,8 +108,7 @@
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -92,16 +121,16 @@
 }
 
 .modal-body {
-    
     background-color: black;
-
- }
+}
 
 .modal-footer {
     padding: 20px;
     background-color: #333;
     color: white;
 }
+
+
 /* //popup modal for QR code version of site  */
 
 
@@ -227,10 +256,18 @@ body {
 
 /*-- banner --*/
 
+.mainMenu {
+    margin-left: 300px;
+    position: absolute;
+    max-width: 900px;
+    top: 20px;
+}
+
 .banner {
-    background: url(../images/6.jpg) no-repeat 0px 0;
+    background: url(../images/1280x800-134779-os-x-wallpapers-location.jpg) no-repeat 0px 0;
     background-size: cover;
     padding: 1em 0 5em;
+    box-shadow: 100vw 100vh rgba(0, 0, 0, 0.5) inset;
 }
 
 .agile-logo {
@@ -259,7 +296,7 @@ body {
 .w3l-banner-grids {
     margin: 3em 0 0 0;
     padding: 2em 1em;
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .w3ls-banner-right {
@@ -442,8 +479,10 @@ body {
     text-align: center;
 }
 
+
 /* Find me icon transitions  */
-.agileinfo-social-grids ul li a i.fa.fa-facebook, .agileinfo-social-grids ul li a i.fa.fa-linkedin, .agileinfo-social-grids ul li a i.fa.fa-instagram, .agileinfo-social-grids ul li a i.fa.fa-github{
+
+.agileinfo-social-grids ul li a i.fa.fa-facebook, .agileinfo-social-grids ul li a i.fa.fa-linkedin, .agileinfo-social-grids ul li a i.fa.fa-instagram, .agileinfo-social-grids ul li a i.fa.fa-github {
     height: 30px;
     width: 30px;
     border: solid 2px #FFFFFF;
@@ -481,7 +520,9 @@ body {
     color: #FFFFFF;
 }
 
+
 /* //Find me icon transitions  */
+
 
 /*-- //banner --*/
 
@@ -945,8 +986,7 @@ body {
 }
 
 .nav-tabs > li {
-     margin: 10px 10px; 
-
+    margin: 10px 10px;
 }
 
 .nav-tabs > li > a:hover {
@@ -1190,8 +1230,8 @@ body {
     }
 }
 
-@media(min-width: 1200px){
-        #m_nav_list {
+@media(min-width: 1200px) {
+    #m_nav_list {
         margin: 2em 0 0 0 !important;
     }
 }
@@ -1200,9 +1240,7 @@ body {
     #buttonCluster.banner-right-info {
         margin: 2em 0 0 0;
     }
-
 }
-
 
 @media(min-width: 991px) and (max-width: 1199px) {
     #buttonCluster {
@@ -1212,8 +1250,8 @@ body {
     }
 }
 
-@media(max-width: 1150px){
-        #m_nav_list {
+@media(max-width: 1150px) {
+    #m_nav_list {
         margin: .5em 0 0 0 !important;
     }
 }
@@ -1229,7 +1267,6 @@ body {
         text-align: center !important;
         box-shadow: 0 0 2px #000 !important;
     }
-
     .nav-tabs {
         margin: 1em auto;
     }
