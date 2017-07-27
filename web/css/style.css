@@ -529,11 +529,11 @@ body {
 
 /*-- about --*/
 
-.about, .statistics, .experience, .feedback, .projects, .contact {
+.about, .education, .experience, .feedback, .projects, .contact {
     padding: 4em 0 4em 0;
 }
 
-.wthree-about-left h3, .wthree-about-right h3, .w3-agileits-statistics-heading h3 {
+.wthree-about-left h3, .wthree-about-right h3, .w3-agileits-education-heading h3 {
     color: #2f2f2f;
     font-size: 2em;
     margin: 0 0 1em 0;
@@ -692,26 +692,26 @@ bannerBackground {
     background-position: 50% 50%;
 }
 
-.w3-agileits-statistics-heading h3 {
+.w3-agileits-education-heading h3 {
     text-align: center;
     color: #FFFFFF;
 }
 
-.agile-statistics-grids {
+.agile-education-grids {
     margin: 4em 0 0 0;
 }
 
-.agile-statistics-grid {
+.agile-education-grid {
     text-align: center;
 }
 
-.agile-statistics-grid h4 {
+.agile-education-grid h4 {
     color: #FFFFFF;
     font-size: 2em;
     margin: 0 0 .5em 0;
 }
 
-.agile-statistics-grid p {
+.agile-education-grid p {
     color: #FFFFFF;
     font-size: 20px;
     margin: 1em 0 0 0;
@@ -719,7 +719,7 @@ bannerBackground {
     letter-spacing: 1px;
 }
 
-.agile-statistics-grid i.fa.fa-blank, .agile-statistics-grid i.fa.fa-user, .agile-statistics-grid i.fa.fa-trophy {
+.agile-education-grid i.fa.fa-blank, .agile-education-grid i.fa.fa-user, .agile-education-grid i.fa.fa-trophy {
     color: #FFFFFF;
     font-size: 2em;
     font-family: Sans-serif;
@@ -730,11 +730,11 @@ bannerBackground {
     padding: 1.1em 0 0 0;
 }
 
-.statistics-grid2 {
+.education-grid2 {
     position: relative;
 }
 
-.statistics-grid2:before {
+.education-grid2:before {
     content: "";
     height: 2px;
     background: #FFFFFF;
@@ -745,7 +745,7 @@ bannerBackground {
     margin-top: 25px;
 }
 
-.statistics-grid2:after {
+.education-grid2:after {
     content: "";
     height: 2px;
     background: #FFFFFF;
@@ -757,7 +757,7 @@ bannerBackground {
 }
 
 
-/*-- //statistics --*/
+/*-- //education --*/
 
 
 /*-- experience --*/
@@ -1286,7 +1286,7 @@ bannerBackground {
 }
 
 @media(max-width:991px) {
-    .agile-statistics-grid {
+    .agile-education-grid {
         margin-left: auto;
         margin-right: auto;
         float: none;
@@ -1333,10 +1333,10 @@ bannerBackground {
     .wthree-about-right {
         margin: 2em 0 0 0;
     }
-    .statistics-grid2:before {
+    .education-grid2:before {
         left: -38px;
     }
-    .statistics-grid2:after {
+    .education-grid2:after {
         right: -38px;
     }
     .experience-grid {
@@ -1374,7 +1374,7 @@ bannerBackground {
 
 
 /* @media(max-width: 767px) {
-    .agile-statistics-grid {
+    .agile-education-grid {
         margin-left: auto;
         margin-right: auto;
         float: none;
@@ -1394,7 +1394,7 @@ bannerBackground {
     #m_nav_menu {
         right: 16px!important;
     }
-    /* .agile-statistics-grid {
+    /* .agile-education-grid {
         float: left;
         width: 33.33%;
     } */
@@ -1508,15 +1508,15 @@ bannerBackground {
     .social-info {
         width: 40%;
     }
-    .agile-statistics-grid p {
+    .agile-education-grid p {
         font-size: .9em;
         letter-spacing: 0px;
     }
-    .statistics-grid2:before {
+    .education-grid2:before {
         left: -28px;
         width: 32%;
     }
-    .statistics-grid2:after {
+    .education-grid2:after {
         right: -28px;
         width: 32%;
     }
@@ -1551,24 +1551,24 @@ bannerBackground {
     .banner {
         padding: 1em 0 2em;
     }
-    .about, .statistics, .experience, .feedback, .projects, .contact {
+    .about, .education, .experience, .feedback, .projects, .contact {
         padding: 2em 0;
     }
-    .agile-statistics-grid {
+    .agile-education-grid {
         float: none;
         width: 100%;
     }
-    .statistics-grid2 {
+    .education-grid2 {
         position: relative;
         margin: 6em 0;
     }
-    .statistics-grid2:before {
+    .education-grid2:before {
         left: 216px;
         width: 2px;
         height: 65px;
         top: -77px;
     }
-    .statistics-grid2:after {
+    .education-grid2:after {
         right: 215px;
         width: 2px;
         height: 65px;
@@ -1580,16 +1580,16 @@ bannerBackground {
 }
 
 @media(max-width:414px) {
-    .wthree-about-left h3, .wthree-about-right h3, .w3-agileits-statistics-heading h3 {
+    .wthree-about-left h3, .wthree-about-right h3, .w3-agileits-education-heading h3 {
         font-size: 1.5em;
     }
-    .agile-statistics-grids {
+    .agile-education-grids {
         margin: 2em 0 0 0;
     }
-    .statistics-grid2:before {
+    .education-grid2:before {
         left: 183px;
     }
-    .statistics-grid2:after {
+    .education-grid2:after {
         right: 183px;
     }
     .w3-agile-experience-grids {
@@ -1629,10 +1629,10 @@ bannerBackground {
 }
 
 @media(max-width:384px) {
-    .statistics-grid2:before {
+    .education-grid2:before {
         left: 170px;
     }
-    .statistics-grid2:after {
+    .education-grid2:after {
         right: 170px;
     }
     .nav-tabs > li > a {
@@ -1644,7 +1644,7 @@ bannerBackground {
 }
 
 @media(max-width:375px) {
-    .statistics-grid2:before {
+    .education-grid2:before {
         left: 162px;
     }
     .w3_tab_img_left {
@@ -1689,15 +1689,15 @@ bannerBackground {
     .w3ls-banner-left {
         padding: 0;
     }
-    .agile-statistics-grid i.fa.fa-desktop, .agile-statistics-grid i.fa.fa-user, .agile-statistics-grid i.fa.fa-trophy {
+    .agile-education-grid i.fa.fa-desktop, .agile-education-grid i.fa.fa-user, .agile-education-grid i.fa.fa-trophy {
         width: 80px;
         height: 80px;
         padding: 1.2em 0 0 0;
     }
-    .statistics-grid2:before {
+    .education-grid2:before {
         left: 135px;
     }
-    .statistics-grid2:after {
+    .education-grid2:after {
         right: 135px;
         top: 181px;
     }
