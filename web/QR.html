@@ -48,18 +48,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                 if ($(window).scrollTop() < 75) {
                     $('#toggle_m_nav').hide();
+
                 }
                 else {
                     $('#toggle_m_nav').show();
+
                 }
             } else {
                 $('#toggle_m_nav').show();
+
             }
         });
 
         $(window).bind('resize load', function () {
             if ($(window).width() < 1200) {
                 $('#toggle_m_nav').show();
+
                 $('#largeMenu').hide();
             }
             else {
@@ -128,9 +132,71 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="w3l-banner-grids">
                 <!--<div class="col-md-8 w3ls-banner-right"> this should be used if the Job title, name, and sex column is used. Otherwise use col-md-12-->
                 <div class="col-md-12">
-                    <div class="banner-right-img">
-                        <img src="images/1.jpg" alt="Picture of Deven Swiergiel" />
+
+                    <div class="cardBox banner-right-img" style="width: 100%; height: 100%;">
+                        <img src="images/1.jpg" alt="John" style="width:100%">
+                        <div class="containers">
+                            <h2>John Doe</h2>
+                            <p class="title">CEO & Founder, Example</p>
+                            <p>Harvard University</p>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <p><button>Contact</button></p>
+                        </div>
                     </div>
+
+                    <style>
+                        .cardBox {
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                            background-color: lightgrey;
+                            max-width: 300px;
+                            margin: auto;
+                            text-align: center;
+                        }
+
+                        .containers {
+                            padding: 0 16px;
+                        }
+
+                        .title {
+                            color: grey;
+                            font-size: 18px;
+                        }
+
+                        button {
+                            border: none;
+                            outline: 0;
+                            display: inline-block;
+                            padding: 8px;
+                            color: white;
+                            background-color: #000;
+                            text-align: center;
+                            cursor: pointer;
+                            width: 100%;
+                            font-size: 18px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-size: 22px;
+                            color: black;
+                        }
+
+                        button:hover,
+                        a:hover {
+                            opacity: 0.7;
+                        }
+                    </style>
+
+
+
+                    <!-- <div class="banner-right-img">
+                        <img src="images/1.jpg" alt="Picture of Deven Swiergiel" />
+                    </div> -->
+
+
                     <div class="banner-right-info">
                         <p style="margin-top: 0px;">I am a Software Engineer/Developer and Senior in college currently working for the government as
                             a Software Developer Intern while working towards a B.S in Computer Science and Applied Mathematics.
