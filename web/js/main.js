@@ -39,7 +39,6 @@ var toggle_nav_container = function () {
 			$("#m_ham_1").addClass("m_nav_ham_1_open");
 			$("#m_ham_2").addClass("m_nav_ham_2_open");
 			$("#m_ham_3").addClass("m_nav_ham_3_open");
-
 		}
 		else
 		{
@@ -55,10 +54,7 @@ var toggle_nav_container = function () {
 		}
 	});
 
-
-
 }
-
 
 // Function that takes the href value of links in the navbar and then scrolls 
 //the div on the page whose ID matches said value. This only works if you use 
@@ -78,9 +74,6 @@ var gotoByScroll = function (){
 
 	});
 		
-
-
-
 }
 
 
