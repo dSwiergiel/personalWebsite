@@ -50,7 +50,6 @@ var toggle_nav_container = function () {
 			$("#m_ham_1").removeClass("m_nav_ham_1_open");
 			$("#m_ham_2").removeClass("m_nav_ham_2_open");
 			$("#m_ham_3").removeClass("m_nav_ham_3_open");
-
 		}
 	});
 

@@ -48,18 +48,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                 if ($(window).scrollTop() < 75) {
                     $('#toggle_m_nav').hide();
+
                 }
                 else {
                     $('#toggle_m_nav').show();
+
                 }
             } else {
                 $('#toggle_m_nav').show();
+
             }
         });
 
         $(window).bind('resize load', function () {
             if ($(window).width() < 1200) {
                 $('#toggle_m_nav').show();
+
                 $('#largeMenu').hide();
             }
             else {
@@ -128,9 +132,69 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="w3l-banner-grids">
                 <!--<div class="col-md-8 w3ls-banner-right"> this should be used if the Job title, name, and sex column is used. Otherwise use col-md-12-->
                 <div class="col-md-12">
-                    <div class="banner-right-img">
+
+<!--                TESTING
+                    <div class="cardBox banner-right-img" style="width: 100%; height: 100%;">
+                        <img src="images/1.jpg" alt="John" style="width:100%">
+                        <div class="containers">
+                            <h2>John Doe</h2>
+                            <p class="title">CEO & Founder, Example</p>
+                            <p>Harvard University</p>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <p><button>Contact</button></p>
+                        </div>
+                    </div> 
+
+                    <style>
+                        .cardBox {
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                            background-color: lightgrey;
+                            max-width: 300px;
+                            margin: auto;
+                            text-align: center;
+                        }
+
+                        .containers {
+                            padding: 0 16px;
+                        }
+
+                        .title {
+                            color: grey;
+                            font-size: 18px;
+                        }
+
+                        button {
+                            border: none;
+                            outline: 0;
+                            display: inline-block;
+                            padding: 8px;
+                            color: white;
+                            background-color: #000;
+                            text-align: center;
+                            cursor: pointer;
+                            width: 100%;
+                            font-size: 18px;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            font-size: 22px;
+                            color: black;
+                        }
+                    </style> 
+                
+                -->
+
+
+ 
+                     <div class="banner-right-img">
                         <img src="images/1.jpg" alt="Picture of Deven Swiergiel" />
-                    </div>
+                    </div>  
+
+
                     <div class="banner-right-info">
                         <p style="margin-top: 0px;">I am a Software Engineer/Developer and Senior in college currently working for the government as
                             a Software Developer Intern while working towards a B.S in Computer Science and Applied Mathematics.
@@ -398,23 +462,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Most Recent</a></li>
                     <li role="presentation"><a href="#WeightConverter" role="tab" id="WeightConverter-tab" data-toggle="tab" aria-controls="learning">Weight Converter</a></li>
                     <li role="presentation"><a href="#tripCalc" role="tab" id="tripCalc-tab" data-toggle="tab" aria-controls="tripCalc">Trip Cost Calculator</a></li>
-                    <!-- <li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">Templates</a></li>
-					<li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Other</a></li>  -->
+                    <li role="presentation"><a href="#chatApp" role="tab" id="chatApp-tab" data-toggle="tab" aria-controls="chatApp">Chat App</a></li>
+                    <!-- <li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">Other</a></li>  -->
                 </ul>
                 <div class="container">
                     <div class="border"></div>
                 </div>
                 <div id="myTabContent" class="tab-content">
+
                     <div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
                         <div class="w3_tab_img">
 
                             <!-- most recent tab  -->
                             <div class="container">
-                                <p class="paragraph">This is a web applicaiton myself and a small group of developers have been working on. 
-                                    Below are pictures of some of the parts I am responsible for on both the front end and back end. This will
-                                    be used by New York State ITS employees to manage our use of IBM's FileNet. It was built
-                                    using Angular 4 and Bootstrap for the front end, and C#, .net, Rest API, MongoDB, and Entity for
-                                    the backend.</p>
+                                <p class="paragraph">This is a web applicaiton myself and a small group of developers have been working on. Below
+                                    are pictures of some of the parts I am responsible for on both the front end and back
+                                    end. This will be used by New York State ITS employees to manage our use of IBM's FileNet.
+                                    It was built using Angular 4 and Bootstrap for the front end, and C#, .net, Rest API,
+                                    SQL server, and Entity for the backend.</p>
                             </div>
 
                             <div class="responsive">
@@ -427,7 +492,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="responsive">
                                 <div class="gallery zoom_center">
@@ -479,17 +543,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
                         <div class="responsive">
                             <div class="gallery zoom_Left_Side">
-                                <a target="_blank" href="images/HomeScreen.png">
-								<img src="images/HomeScreen.png" alt="Home screen of app" width="400" height="400">
+                                <a target="_blank" href="images/Select_weight.png">
+								<img src="images/Select_weight.png"  alt="Home screen of app" width="400" height="400">
 								</a>
-                                <div class="desc">Select from a dropdown what unit you want convert.</div>
+                                <div class="desc">Select unit from a dropdown to convert</div>
                             </div>
                         </div>
 
                         <div class="responsive">
-                            <div class="gallery zoom_center">
+                            <div class="gallery zoom_center" style="height: 120%; width: 101%">
                                 <a target="_blank" href="images/Weight_Selected.png">
-									<img src="images/Weight_Selected.png" alt="Selected weight to convert to image" width="400" height="400">
+									<img src="images/Weight_Selected.png" alt="Selected weight to convert to image" width="400" height="450">
 									</a>
                                 <div class="desc">After unit has been selected, enter a weight to convert.</div>
                             </div>
@@ -510,7 +574,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img src="images/weight_mobile.png" alt="Shows the app in mobile form-factors" width="400" height="400">
 								</a>
                                 <div class="desc">This is what it looks on mobile devices. The left is a 4in screen and the right is a 5.5in
-                                    screen.</div>
+                                    screen.
+                                </div>
                             </div>
                         </div>
 
@@ -518,15 +583,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="clearfix"> </div>
                     </div>
 
-
                     <!-- Trip Cost Calculator Tab -->
                     <div role="tabpanel" class="tab-pane fade" id="tripCalc" aria-labelledby="tripCalc-tab">
                         <div class="w3_tab_img">
 
                             <div class="container">
                                 <p class="paragraph">This is another small web application that I made using Bootstrap. It takes basic details
-                                    about a trip and calculates things like MPG, trip cost, and if the cost is split,
-                                    how much per person. 
+                                    about a trip and calculates things like MPG, trip cost, and if the cost is split, how
+                                    much per person.
                                     <a target="_blank" href="http://www.devenswiergiel.com/tripcostcalculator.html">Click here to try it out!</a></div>
                             </p>
                         </div>
@@ -564,39 +628,104 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<img src="images/trip_mobile.png" alt="Shows the app in mobile form-factors" width="400" height="400">
 								</a>
                                 <div class="desc">This is what it looks on mobile devices. The left is a 4in screen and the right is a 5.5in
-                                    screen.</div>
+                                    screen.
+                                </div>
                             </div>
                         </div>
 
                         <div class="clearfix"> </div>
                     </div>
-                </div>
 
+                    <!-- Chat App Tab -->
+                    <div role="tabpanel" class="tab-pane fade" id="chatApp" aria-labelledby="chatApp-tab">
+                        <div class="w3_tab_img">
+
+                            <div class="container">
+                                <p class="paragraph">This is a small web app that I made using Angular 4, Google's Material Desgin assets, and
+                                    Node.js. It is fully functional and in fact, my friends and I actually used it for a
+                                    little while to chat amongst each other.
+                                </p>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Left_Side">
+                                    <a target="_blank" href="images/chat_Home.png">
+                                <img src="images/chat_Home.png" alt="Home screen of app" style="width: 50%; height: 50%;" width="400" height="400">
+
+                                </a>
+                                    <a target="_blank" href="images/chat_Register.png">
+                                
+                                <img src="images/chat_Register.png" alt="Shows the registration page" style="width: 50%; height: 50%; float: right;"width="400" height="400">
+								</a>
+                                    <div class="desc">Left: Home screen of app. Right: Registration for app.</div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/chat_Message.png">
+                                    <img src="images/chat_Message.png" alt="Shows app displaying content as the user fills it out" style="width: 50%; height: 50%;"width="400" height="400">
+                                    </a>
+                                    <a target="_blank" href="images/chat_UserMessages.png">
+                                    <img src="images/chat_UserMessages.png" alt="Shows app displaying content as the user fills it out" style="width: 50%; height: 50%; float: right;"width="400" height="400">
+									</a>
+                                    <div class="desc">Left: Screen once registered and logged in. Right: When the user clicks on a name it
+                                        shows all messages sent from that user.</div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/chat_ChangeName.png">                                    
+                                    <img src="images/chat_ChangeName.png" alt="Shows app displaying content as the user fills it out" style="width: 50%; height: 50%;"width="400" height="400">
+                                    </a>
+                                    <a target="_blank" href="images/chat_Longin.png">                                    
+                                    <img src="images/chat_Longin.png" alt="Shows app displaying content as the user fills it out" style="width: 50%; height: 50%; float: right;"width="400" height="400">
+									</a>
+                                    <div class="desc">Left: When the user clicks their name, they can change their info. Right: Shows the login
+                                        screen.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/chat_Desktop.png">
+								<img src="images/chat_Desktop.png" alt="Shows the app in desktop form-factors" width="400" height="400">
+								</a>
+                                    <div class="desc">This is what it looks on desktop.</div>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"> </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
-        <script src="js/jquery.tools.min.js"></script>
-        <script src="js/jquery.mobile.custom.min.js"></script>
-        <script src="js/jquery.cm-overlay.js"></script>
-        <script>
+            <script src="js/jquery.tools.min.js"></script>
+            <script src="js/jquery.mobile.custom.min.js"></script>
+            <script src="js/jquery.cm-overlay.js"></script>
+            <script>
                             $(document).ready(function () {
                                 $('.cm-overlay').cmOverlay();
                             });
-        </script>
+            </script>
 
-    </div>
-    <!-- //projects -->
+        </div>
+        <!-- //projects -->
 
-    <!-- map -->
-    <!-- 
+        <!-- map -->
+        <!-- 
 		<div class="map-grid">
 			<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=albany&key=AIzaSyBvt8Xz24WPox_ALQSzIwPjw1jwyVH4UV0"
 			 allowfullscreen></iframe>
 		</div> -->
 
-    <!-- //map -->
+        <!-- //map -->
 
-    <!-- contact -->
-    <!-- <div  id="contact"style="height: 400px;">
+        <!-- contact -->
+        <!-- <div  id="contact"style="height: 400px;">
 			<div class="w3-agileits-education-heading experience-heading">
 				<h3 style="margin-bottom: 40px;">Contact Me</h3>
 
@@ -606,64 +735,64 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div> -->
 
 
-    <!-- IN DEVELOPMENT!! -->
+        <!-- IN DEVELOPMENT!! -->
 
 
-    <div class="contact" style="padding-top: 0px;" id="contact">
-        <div class="container">
-            <div class="w3-agileits-education-heading experience-heading">
-                <h3 style="margin-bottom: 10px;">Contact Me</h3>
-                <p style="text-align: center;">Or Email: Devenswiergiel@gmail.com</p>
-            </div>
-            <div class="contact-form">
-                <form name="myemailform" action="form-to-email.php" method="post">
-                    <div class="fields-grid">
-                        <div class="styled-input agile-styled-input-top">
-                            <input type="text" name="name" required="">
-                            <label>Full Name</label>
+        <div class="contact" style="padding-top: 0px;" id="contact">
+            <div class="container">
+                <div class="w3-agileits-education-heading experience-heading">
+                    <h3 style="margin-bottom: 10px;">Contact Me</h3>
+                    <p style="text-align: center;">Or Email: Devenswiergiel@gmail.com</p>
+                </div>
+                <div class="contact-form">
+                    <form name="myemailform" action="form-to-email.php" method="post">
+                        <div class="fields-grid">
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="text" name="name" required="">
+                                <label>Full Name</label>
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="text" name="phone" placeholder="(Optional)">
+                                <label>Phone</label>
+                                <span></span>
+                            </div>
+                            <div class="styled-input">
+                                <input type="text" name="email" required="">
+                                <label>Email</label>
+                                <span></span>
+                            </div>
+                            <div class="styled-input">
+                                <input type="text" name="company" placeholder="(Optional)">
+                                <label>Company</label>
+                                <span></span>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="styled-input textarea-grid">
+                            <textarea name="message" required=""></textarea>
+                            <label>Message</label>
                             <span></span>
                         </div>
-                        <div class="styled-input agile-styled-input-top">
-                            <input type="text" name="phone" placeholder="(Optional)">
-                            <label>Phone</label>
-                            <span></span>
-                        </div>
-                        <div class="styled-input">
-                            <input type="text" name="email" required="">
-                            <label>Email</label>
-                            <span></span>
-                        </div>
-                        <div class="styled-input">
-                            <input type="text" name="company" placeholder="(Optional)">
-                            <label>Company</label>
-                            <span></span>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="styled-input textarea-grid">
-                        <textarea name="message" required=""></textarea>
-                        <label>Message</label>
-                        <span></span>
-                    </div>
-                    <input type="submit" value="SEND">
-                </form>
+                        <input type="submit" value="SEND">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- //contact -->
+        <!-- //contact -->
 
-    <!-- copyright -->
-    <div class="agileits-w3layouts-footer">
-        <div class="container">
-            <p>© 2017 Deven Swiergiel. All rights reserved.</p>
+        <!-- copyright -->
+        <div class="agileits-w3layouts-footer">
+            <div class="container">
+                <p>© 2017 Deven Swiergiel. All rights reserved.</p>
+            </div>
         </div>
-    </div>
-    <!-- //copyright -->
+        <!-- //copyright -->
 
-    <script src="js/bars.js"></script>
-    <script src="js/owl.carousel.js"></script>
+        <script src="js/bars.js"></script>
+        <script src="js/owl.carousel.js"></script>
 </body>
 
 </html>

@@ -134,7 +134,7 @@
 /* //popup modal for QR code version of site  */
 
 
-/* Custome Gallery  */
+/* Custom Gallery  */
 
 div.gallery {
     border: 1px solid #ccc;
@@ -177,6 +177,12 @@ div.desc {
 }
 
 @media only screen and (max-width: 1200px) {
+    .responsive {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     .responsive {
         width: 100%;
     }
