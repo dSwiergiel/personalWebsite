@@ -43,7 +43,7 @@ $headers .= "Reply-To: $visitor_email \r\n";
 mail($to,$email_subject,$email_body,$headers);
 
 //done. redirect to thank-you page.
-header('Location: message-confirmation.html');
+header('Location: message-confirmation');
 
 
 // Function to validate against any email injection attempts
