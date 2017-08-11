@@ -1334,75 +1334,75 @@ body {
 @media(min-width: 1201px) {
     /* For the first image on the gallery  */
     .zoom_Left_Side {
-        -webkit-transition: all 200ms ease-in;
+        -webkit-transition: all 200ms ease;
         -webkit-transform: scale(1);
-        -ms-transition: all 200ms ease-in;
+        -ms-transition: all 300ms ease;
         -ms-transform: scale(1);
-        -moz-transition: all 200ms ease-in;
+        -moz-transition: all 300ms ease;
         -moz-transform: scale(1);
-        transition: all 200ms ease-in;
+        transition: all 300ms ease;
         transform: scale(1);
     }
     .zoom_Left_Side:hover {
         position: relative;
         box-shadow: 0px 0px 150px #000000;
         z-index: 1;
-        -webkit-transition: all 200ms ease-in;
+        -webkit-transition: all 300ms ease;
         -webkit-transform: scale(1.5) translate(30%, 0);
-        -ms-transition: all 200ms ease-in;
+        -ms-transition: all 300ms ease;
         -ms-transform: scale(1.5) translate(30%, 0);
-        -moz-transition: all 200ms ease-in;
+        -moz-transition: all 300ms ease;
         -moz-transform: scale(1.5);
-        transition: all 200ms ease-in;
+        transition: all 400ms ease;
         transform: scale(1.5) translate(30%, 0);
     }
     /* Center 2 images  */
     .zoom_center {
         display: inline-block;
         position: relative;
-        -webkit-transition: all 200ms ease-in;
+        -webkit-transition: all 300ms ease;
         -webkit-transform: scale(1);
-        -ms-transition: all 200ms ease-in;
+        -ms-transition: all 300ms ease;
         -ms-transform: scale(1);
-        -moz-transition: all 200ms ease-in;
+        -moz-transition: all 300ms ease;
         -moz-transform: scale(1);
-        transition: all 200ms ease-in;
+        transition: all 300ms ease;
         transform: scale(1);
     }
     .zoom_center:hover {
         box-shadow: 0px 0px 150px #000000;
         z-index: 1;
-        -webkit-transition: all 200ms ease-in;
+        -webkit-transition: all 300ms ease;
         -webkit-transform: scale(1.5);
-        -ms-transition: all 200ms ease-in;
+        -ms-transition: all 300ms ease;
         -ms-transform: scale(1.5);
-        -moz-transition: all 200ms ease-in;
+        -moz-transition: all 300ms ease;
         -moz-transform: scale(1.5);
-        transition: all 200ms ease-in;
+        transition: all 300ms ease;
         transform: scale(1.5);
     }
     /* For the last image on the gallery  */
     .zoom_Right_Side {
-        -webkit-transition: all 200ms ease-in;
+        -webkit-transition: all 300ms ease;
         -webkit-transform: scale(1);
-        -ms-transition: all 200ms ease-in;
+        -ms-transition: all 300ms ease;
         -ms-transform: scale(1);
-        -moz-transition: all 200ms ease-in;
+        -moz-transition: all 300ms ease;
         -moz-transform: scale(1);
-        transition: all 200ms ease-in;
+        transition: all 300ms ease;
         transform: scale(1);
     }
     .zoom_Right_Side:hover {
         position: relative;
         box-shadow: 0px 0px 150px #000000;
         z-index: 1;
-        -webkit-transition: all 200ms ease-in;
+        -webkit-transition: all 300ms ease;
         -webkit-transform: scale(1.5) translate(-30%, 0);
-        -ms-transition: all 200ms ease-in;
+        -ms-transition: all 300ms ease;
         -ms-transform: scale(1.5) translate(-30%, 0);
-        -moz-transition: all 200ms ease-in;
+        -moz-transition: all 300ms ease;
         -moz-transform: scale(1.5);
-        transition: all 200ms ease-in;
+        transition: all 400ms ease;
         transform: scale(1.5) translate(-30%, 0);
     }
     /* End Image Zoom  */
