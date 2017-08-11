@@ -265,7 +265,7 @@ body {
 .mainMenu {
     margin-left: 300px;
     position: absolute;
-    max-width: 900px; 
+    max-width: 900px;
     top: 20px;
 }
 
@@ -686,7 +686,6 @@ body {
     background: url(../images/6.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
-
 
 .jarallax {
     position: relative;
