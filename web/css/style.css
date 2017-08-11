@@ -6,7 +6,6 @@
 
 /* popup modal for QR code version of site  */
 
-
 /* The Modal (background) */
 
 .modal {
@@ -130,7 +129,6 @@
     color: white;
 }
 
-
 /* //popup modal for QR code version of site  */
 
 
@@ -189,7 +187,7 @@ div.desc {
 }
 
 
-/* //Custome Gallery  */
+/* END Custom Gallery  */
 
 .border {
     margin-left: auto;
@@ -231,7 +229,6 @@ div.desc {
     transition: opacity .5s;
 }
 
-
 /* Show the tooltip text when you mouse over the tooltip container */
 
 .gpaToolTip:hover .gpaTipText {
@@ -239,8 +236,8 @@ div.desc {
     opacity: .8;
 }
 
-
 /* End Tool tip stuff  */
+
 
 body a {
     transition: 0.5s all;
@@ -526,9 +523,7 @@ body {
     color: #FFFFFF;
 }
 
-
 /* //Find me icon transitions  */
-
 
 /*-- //banner --*/
 
@@ -882,81 +877,6 @@ body {
 
 
 /*-- //experience --*/
-
-
-/*-- feedback --*/
-
-.feedback {
-    background: url(../images/3.jpg) no-repeat 0px 0px;
-    background: cover;
-}
-
-.feedback-top {
-    padding: 1em;
-    background: rgba(255, 255, 255, 0.18);
-    position: relative;
-}
-
-.feedback-top:after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 27%;
-    width: 0;
-    height: 0;
-    border-top: 9px solid rgba(227, 227, 227, 0.23);
-    border-right: 9px solid transparent;
-    border-left: 9px solid transparent;
-    transform: rotate(0deg);
-}
-
-.feedback-top p {
-    color: #FFFFFF;
-    font-size: .9em;
-    margin: 0;
-    line-height: 1.8em;
-}
-
-.feedback-img {
-    float: left;
-    width: 28%;
-}
-
-.feedback-grids {
-    margin: 2em auto 0;
-    width: 55%;
-}
-
-.feedback-img img {
-    width: 100%;
-}
-
-.feedback-info {
-    margin: 1em !important;
-}
-
-.feedback-img-info {
-    float: left;
-    width: 50%;
-    margin-left: .5em;
-}
-
-.feedback-img-info h5 {
-    color: #004080;
-    font-size: 1em;
-    margin: 0;
-    font-weight: 600;
-}
-
-.feedback-img-info p {
-    color: #cecece;
-    font-size: .9em;
-    margin: 0;
-}
-
-
-/*-- //feedback --*/
-
 
 /*-- portfolio --*/
 
