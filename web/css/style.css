@@ -1452,7 +1452,7 @@ body {
 
 @media(max-width:480px) {
     .banner-right-img {
-        width: 45%;
+        width: 60%;
     }
     .w3ls-banner-left {
         float: none;
@@ -1464,7 +1464,7 @@ body {
         float: none;
     }
     .banner-right-img {
-        width: 36%;
+        
         margin: 0 auto;
     }
     .w3l-banner-grids {
