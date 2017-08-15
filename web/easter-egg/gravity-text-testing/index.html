@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>GRAVITY TEXT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Nova+Round'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<p id="me"> A PEN by Mayur Birle </p>
+
+<div class="c-box">
+<div class="btn">Control</div>
+<div class="main-c" >
+<div align="center"><div class="start-g">Start Gravity</div><div class="stop-g">zero gravity</div></div>
+<div class="input-area">
+<input type="range"  min="-3" max="3" step=".2" value="0" id="gravity-x" ></input>
+<input type="range"  min="-3" max="3" step=".2" value="1" id="gravity-y" ></input>
+</div>
+<br><br><br>
+<div align="center"><div class="close" >Close</div></div><br>
+</div>
+</div>
+
+<br><br>
+<div id="test" align="center">
+<p align="center" id="wbox">
+<span v-for="a in message" 
+:style="{color: getColor()}" >{{a}}</span>
+</p>
+    <input  v-model="message" align="center" id="g-ip">
+</div>
+<br>
+<div align="center" class="g-btn">
+<button class="start-g" type="submit" id="grav" >START GRAVITY</button>
+<button class="stop-g" type="submit" id="grav">ZERO GRAVITY</button>
+
+
+</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

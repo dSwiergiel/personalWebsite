@@ -1,119 +1,273 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jGravity Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jGravity Demo</title>
 
-<!-- jQuery *Reequired -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<!-- jGravity file -->
-<script type="text/javascript" src="jGravity-min.js"></script>
+    <!-- jQuery *Reequired -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- jGravity file -->
+    <script type="text/javascript" src="jGravity-min.js"></script>
 
-<!-- Unimportant CSS File for demo purposes -->
-<link href="http://tinybigideas.com/template/css/colourpadFramework-min.css" rel="stylesheet" />
+    <!-- Unimportant CSS File for demo purposes -->
+    <link href="http://tinybigideas.com/template/css/colourpadFramework-min.css" rel="stylesheet" />
 
 
-<script>
-$(document).ready(function() {
-	$('div.jGravity').live('hover', function() { // This can be changed to anything you like in order to trigger jGravity effect
-		$('body').jGravity({ // jGravity works best when targeting the body
-			target: 'h2#test', // Enter your target critera e.g. 'div, p, span', 'h2' or 'div#specificDiv', or even 'everything' to target everything in the body
-			ignoreClass: 'ignoreMe', // Specify if you would like to use an ignore class, and then specify the class
-			weight: 25, // Enter any number 1-100 ideally (25 is default), you can also use 'heavy' or 'light'
-			depth: 5, // Enter a value between 1-10 ideally (1 is default), this is used to prevent targeting structural divs or other items which may break layout in jGravity
-			drag: true // Decide if users can drag elements which have been effected by jGravity
-		});
+    <script>
+        $(document).ready(function () {
+            $('div.jGravity').live('hover', function () { // This can be changed to anything you like in order to trigger jGravity effect
+                $('body').jGravity({ // jGravity works best when targeting the body
+                    target: 'h2#test', // Enter your target critera e.g. 'div, p, span', 'h2' or 'div#specificDiv', or even 'everything' to target everything in the body
+                    ignoreClass: 'ignoreMe', // Specify if you would like to use an ignore class, and then specify the class
+                    weight: 25, // Enter any number 1-100 ideally (25 is default), you can also use 'heavy' or 'light'
+                    depth: 5, // Enter a value between 1-10 ideally (1 is default), this is used to prevent targeting structural divs or other items which may break layout in jGravity
+                    drag: true // Decide if users can drag elements which have been effected by jGravity
+                });
 
-		// Misc code for demo purposes
-		$(this).removeClass('jGravity');
-		$(this).delay(1000).queue(function() {
-			$(this).html("<h2><a href='http://tinybigideas.com/plugins/jquery-gravity/'>Get jGravity</a></h2>");
-		});
-		// ----- \\
-		
-	});
-});
-</script>
+                // Misc code for demo purposes
+                $(this).removeClass('jGravity');
+                $(this).delay(1000).queue(function () {
+                    $(this).html("<h2><a href='http://tinybigideas.com/plugins/jquery-gravity/'>Get jGravity</a></h2>");
+                });
+                // ----- \\
 
-<style>
-/* Misc styles used for demo purposes */
-body {overflow:hidden; margin:0; padding:0; height:100%;}
+            });
+        });
 
-div.box {height:100px; width:100px; float:left; margin:10px; color:white; text-align:center;}
+    </script>
 
-div.blackHeader {width:100%; clear:both; height:30px;}
-	div.blackHeader div.headPiece {background:#333; width:5%; float:left; height:30px;}
-		div.blackHeader div.headPiece p {color: white;text-align: center;padding-top: 5px;}
-			div.blackHeader div.headPiece p a {color: white;text-decoration: none;}
-		
-div.logoBar {width:100%; clear:both; height:70px;}
-	div.logoBar div.barPiece {background:#F1F1F1; width:20%; height:70px; border-bottom:1px solid #E2E2E2; float:left;}
-	div.logoBar h1 {color:#333; text-align:center; font-size:30px; padding-top:12px; font-weight:normal;}	
-		div.logoBar h1 a {color: #333; padding-bottom: 2px;}
 
-div.goBtnCentre {width:100%; clear:both; height: 80px; margin:20px 0;}
-	div.goButton {height: 80px; background: #E7534A;border: 1px solid #CE2117;width:200px; margin:0 auto;}
-		div.goButton h2 {text-align: center;font-size: 25px;color: white;font-weight: normal;line-height: 80px;cursor: pointer;}
-			div.goButton h2 a {color: white;}
+    <script>
+        var demo = new Vue({
+            el: '#test',
+            data: {
+                message: 'Gravity Text',
+                getRandomColor: '#03a9f4'
+            },
+            methods: {
+                getColor: function () {
+                    console.log('sadasd')
+                    var letters = '0123456789ABCDEF';
+                    var color = '#';
+                    for (var i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    return color;
+                }
+            }
+        })
 
-div.duckCentre {width:100%; clear:both; height: 500px; margin:20px 0;}
-	div.duckCentre div.duckInner {width:740px; margin:0 auto;}
-		div.duckCentre div.duck {background:#FFF; float:left; width:200px; height:200px; margin:10px; padding:10px; border:1px solid #eee;}
-</style>
+
+        $(document).ready(function () {
+
+            var gr_x = document.getElementById("gravity-x").value;
+            var gr_y = document.getElementById("gravity-y").value;
+
+            $(".start-g").click(function () {
+                $("span").addClass("test");
+                $(".test").throwable({
+                    drag: true,
+                    gravity: { x: gr_x, y: gr_y },
+                    impulse: {
+                        f: 152,
+                        p: { x: 0, y: 1.5 }
+                    },
+                    shape: "circle",
+                    autostart: false,
+                    bounce: 20,
+                    damping: 13,
+
+                });
+
+            });
+
+            $(".stop-g").click(function () {
+                $(".test").throwable({
+                    gravity: { x: 0, y: 0 },
+                });
+            });
+
+            $("#gravity-x, #gravity-y").click(function () {
+                var gr_x = document.getElementById("gravity-x").value;
+                var gr_y = document.getElementById("gravity-y").value;
+                $(".test").throwable({
+                    gravity: { x: gr_x, y: gr_y },
+                });
+
+            });
+        });
+
+        $(document).ready(function () {
+            $(".btn").click(function () { $(".main-c").slideToggle("slow"); });
+            $(".close").click(function () { $(".main-c").slideUp(); });
+
+        });
+
+    </script>
+
+
+<p id="me"> A PEN by Mayur Birle </p>
+
+<div class="c-box">
+<div class="btn">Control</div>
+<div class="main-c" >
+<div align="center"><div class="start-g">Start Gravity</div><div class="stop-g">zero gravity</div></div>
+<div class="input-area">
+<input type="range"  min="-3" max="3" step=".2" value="0" id="gravity-x" ></input>
+<input type="range"  min="-3" max="3" step=".2" value="1" id="gravity-y" ></input>
+</div>
+<br><br><br>
+<div align="center"><div class="close" >Close</div></div><br>
+</div>
+</div>
+
+<br><br>
+<div id="test" align="center">
+<p align="center" id="wbox">
+<span v-for="a in message" 
+:style="{color: getColor()}" >{{a}}</span>
+</p>
+    <input  v-model="message" align="center" id="g-ip">
+</div>
+<br>
+<div align="center" class="g-btn">
+<button class="start-g" type="submit" id="grav" >START GRAVITY</button>
+<button class="stop-g" type="submit" id="grav">ZERO GRAVITY</button>
+
+
+</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js'></script>
+
+    <script src="js/index.js"></script>
+
+    <style>
+        /* Misc styles used for demo purposes */
+
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        div.box {
+            height: 100px;
+            width: 100px;
+            float: left;
+            margin: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        div.blackHeader {
+            width: 100%;
+            clear: both;
+            height: 30px;
+        }
+
+        div.blackHeader div.headPiece {
+            background: #333;
+            width: 5%;
+            float: left;
+            height: 30px;
+        }
+
+        div.blackHeader div.headPiece p {
+            color: white;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        div.blackHeader div.headPiece p a {
+            color: white;
+            text-decoration: none;
+        }
+
+        div.logoBar {
+            width: 100%;
+            clear: both;
+            height: 70px;
+        }
+
+        div.logoBar div.barPiece {
+            background: #F1F1F1;
+            width: 20%;
+            height: 70px;
+            border-bottom: 1px solid #E2E2E2;
+            float: left;
+        }
+
+        div.logoBar h1 {
+            color: #333;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 12px;
+            font-weight: normal;
+        }
+
+        div.logoBar h1 a {
+            color: #333;
+            padding-bottom: 2px;
+        }
+
+        div.goBtnCentre {
+            width: 100%;
+            clear: both;
+            height: 80px;
+            margin: 20px 0;
+        }
+
+        div.goButton {
+            height: 80px;
+            background: #E7534A;
+            border: 1px solid #CE2117;
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        div.goButton h2 {
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            font-weight: normal;
+            line-height: 80px;
+            cursor: pointer;
+        }
+
+        div.goButton h2 a {
+            color: white;
+        }
+
+        div.duckCentre {
+            width: 100%;
+            clear: both;
+            height: 500px;
+            margin: 20px 0;
+        }
+
+        div.duckCentre div.duckInner {
+            width: 740px;
+            margin: 0 auto;
+        }
+
+        div.duckCentre div.duck {
+            background: #FFF;
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #eee;
+        }
+    </style>
 
 </head>
 
-<body>
-
-<!-- All HTML elements are used for demo purposes - jGravity should work correctly on most layouts. If you do find a problem item/s, play with the depth and ignoring certain items until you get it right -->
-
-<div class="blackHeader ignoreMe">
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-    <div class="headPiece"></div>
-</div>
-
-<div class="logoBar ignoreMe">
-	<div class="barPiece"></div>
-    <div class="barPiece"></div>
-    <div class="barPiece">
-		<h1 class="ignoreMe"><a class="ignoreMe" href="http://tinybigideas.com">tiny<strong class="ignoreMe">BIG</strong>ideas</a></h1>
-    </div>
-    <div class="barPiece"></div>
-    <div class="barPiece"></div>
-</div>
-
-<div class="goBtnCentre ignoreMe">
-    <div class="goButton jGravity">
-        <h2 id="test" class="ignoreMe">Initiate jGravity</h2>
-    </div>
-</div>
-
-<div class="duckCentre ignoreMe">
-	<div class="duckInner ignoreMe">
-        <div class="duck"><img class="ignoreMe" src="img/duck1.jpg" /></div>
-        <div class="duck"><img class="ignoreMe" src="img/duck2.jpg" /></div>
-        <div class="duck"><img class="ignoreMe" src="img/duck3.jpg" /></div>
-   </div>
-</div>
-
 
 </body>
+
 </html>
