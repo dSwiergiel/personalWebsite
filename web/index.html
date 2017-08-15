@@ -3,6 +3,7 @@ Author: Deven Swiergiel
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Deven Swiergiel | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -129,7 +130,7 @@ Author: Deven Swiergiel
                 <!--<div class="col-md-8 w3ls-banner-right"> this should be used if the Job title, name, and sex column is used. Otherwise use col-md-12-->
                 <div class="col-md-12">
 
-<!--                TESTING
+                    <!-- TESTING
                     <div class="cardBox banner-right-img" style="width: 100%; height: 100%;">
                         <img src="images/1.jpg" alt="John" style="width:100%">
                         <div class="containers">
@@ -180,22 +181,18 @@ Author: Deven Swiergiel
                             font-size: 22px;
                             color: black;
                         }
-                    </style> 
-                
-                -->
+                    </style>  -->
 
-
- 
-                     <div class="banner-right-img">
+                    <div class="banner-right-img">
                         <img src="images/1.jpg" alt="Picture of Deven Swiergiel" />
-                    </div>  
-
+                    </div>
 
                     <div class="banner-right-info">
-                        <p style="margin-top: 0px;">My name is Deven Swiergiel and I am a Software Engineer/Developer and Senior in college currently working for the government as
-                            a Software Developer Intern while working towards a B.S in Computer Science and Applied Mathematics.
-                            I have experience working on a team as well as by myself creating and deploying enterprise software
-                            and systems for New York State. I enjoy learning new skills and love creating even more.</p>
+                        <p style="margin-top: 0px;">My name is Deven Swiergiel and I am a Software Engineer/Developer and Senior in college currently
+                            working for the government as a Software Developer Intern while working towards a B.S in Computer
+                            Science and Applied Mathematics. I have experience working on a team as well as by myself creating
+                            and deploying enterprise software and systems for New York State. I enjoy learning new skills
+                            and love creating even more.</p>
                         <p>This website was designed and created by me. If you'd like, explore it to learn more about me!</p>
 
                     </div>
@@ -357,12 +354,12 @@ Author: Deven Swiergiel
                 <script src="js/jarallax.js"></script>
                 <script src="js/SmoothScroll.min.js"></script>
                 <script type="text/javascript">
-                            /* init Jarallax */
-                            $('.jarallax').jarallax({
-                                speed: 0.5,
-                                imgWidth: 1366,
-                                imgHeight: 768
-                            })
+                    /* init Jarallax */
+                    $('.jarallax').jarallax({
+                        speed: 0.5,
+                        imgWidth: 1366,
+                        imgHeight: 768
+                    })
                 </script>
             </div>
         </div>
@@ -696,20 +693,20 @@ Author: Deven Swiergiel
                             <div class="clearfix"> </div>
                         </div>
                     </div>
-                                        <!-- Other Tab -->
+                    <!-- Other Tab -->
                     <div role="tabpanel" class="tab-pane fade" id="other" aria-labelledby="other-tab">
                         <div class="w3_tab_img">
 
                             <div class="container">
-                                <p class="paragraph">I have worked on many other projects over the years, this website being one of them, however, many of them do not have GUI's
-                                    and the ones that do I feel are not exciting enough to showcase here. Either way, if
-                                    you'd like to take a look at them, check out my 
+                                <p class="paragraph">I have worked on many other projects over the years, this website being one of them, however,
+                                    many of them do not have GUI's and the ones that do I feel are not exciting enough to
+                                    showcase here. Either way, if you'd like to take a look at them, check out my
 
                                     <a href="https://github.com/dSwiergiel" target="_blank">GitHub account</a>.
-                        
+
                                 </p>
                             </div>
-                            
+
                             <div class="container">
                                 <div class="border"></div>
                             </div>
@@ -724,9 +721,9 @@ Author: Deven Swiergiel
             <script src="js/jquery.mobile.custom.min.js"></script>
             <script src="js/jquery.cm-overlay.js"></script>
             <script>
-                            $(document).ready(function () {
-                                $('.cm-overlay').cmOverlay();
-                            });
+                    $(document).ready(function () {
+                        $('.cm-overlay').cmOverlay();
+                    });
             </script>
 
         </div>
@@ -803,7 +800,18 @@ Author: Deven Swiergiel
         <!-- copyright -->
         <div class="agileits-w3layouts-footer">
             <div class="container">
-                <p>© 2017 Deven Swiergiel. All rights reserved.</p>
+                <script>
+                    var count = 0;
+                    function easter() {
+
+                        count++;
+                        if (count >= 3) {
+                            window.location = "http://devenswiergiel.com/easteregg"; //will redirect to your blog page (an ex: blog.html)
+                        }
+                    } //will call the function after 2 secs.
+                </script>
+                <p onClick="easter()" style="display: inline-block">© </p>
+                <p style="display: inline-block">&nbsp;2017 Deven Swiergiel. All rights reserved.</p>
             </div>
         </div>
         <!-- //copyright -->
