@@ -1,17 +1,13 @@
 var demo = new Vue({
     el: '#demo',
     data: {
-      message: 'Gravity Text',
+      message: 'You Found The Easter Egg!',
       getRandomColor: '#03a9f4'
     },
     methods: {
       getColor: function () {
       console.log('sadasd')
-         var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
+    var color = 'grey'
     return color;
       }
     }

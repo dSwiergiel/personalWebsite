@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Secret Place</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="easter-egg/demo/css/style.css">
+
+</head>
+
+<body>
+
+  <style>
+    .centered {
+      color: grey;
+      font-size: 2.1em;
+      position: fixed;
+      top: 40%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <!-- <h2 id="easteregg" class="centered jGravity">You Found The Easter Egg!<br><p class="start-g">(click me)</p></h2> -->
+
+
+  <!-- count particles -->
+  <!-- <div class="count-particles ">
+    <span class="js-count-particles">--</span> particles
+  </div> -->
+
+
+  <!-- particles.js container -->
+  <div id="particles-js" style="position:realative; z-index: 1">
+    
+    <div class="c-box" style="visibility: hidden; position:fixed; z-index: 3; right: 0% ;transform: translate(-1%);">
+      <div class="btn">Control</div>
+      <div class="main-c">
+        <div align="center">
+          <div class="start-g">Start Gravity</div>
+          <div class="stop-g">zero gravity</div>
+        </div>
+        <div class="input-area">
+          <input type="range" min="-3" max="3" step=".2" value="0" id="gravity-x"></input>
+          <input type="range" min="-3" max="3" step=".2" value="1" id="gravity-y"></input>
+        </div>
+        <br><br><br>
+        <div align="center">
+          <div class="close">Close</div>
+        </div><br>
+      </div>
+    </div>
+
+
+    <div class="centered" style="position:fixed; z-index: 4">
+      <br><br>
+      <div id="demo" align="center">
+        <p align="center" id="wbox">
+          <span v-for="a in message" :style="{color: getColor()}">{{a}}</span>
+        </p>
+        <!-- <input v-model="message" align="center" id="g-ip"> -->
+      </div>
+      <br>
+      <div align="center" class="g-btn">
+        <button class="start-g" type="submit" id="grav">START GRAVITY</button>
+        <!-- <button class="stop-g" type="submit" id="grav">ZERO GRAVITY</button> -->
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <!-- scripts -->
+  <script src="easter-egg/particles.js"></script>
+  <script src="easter-egg/demo/js/app.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js'></script>
+
+  <script src="easter-egg/demo/js/index.js"></script>
+
+  <!-- stats.js -->
+  <!--
+  <script src="easter-egg/demo/js/lib/stats.js"></script>
+  <script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function () {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script> -->
+
+
+</body>
+
+</html>
