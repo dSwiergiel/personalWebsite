@@ -23,15 +23,20 @@ background-size: cover;*/
     height: 100%;
     text-align: center;
 }
+
+
 /*classes used to push the wrapper down when the navbar is expanded
 */
 
 .open_wrapper {
     top: 200px !important;
 }
+
 .closed_wrapper {
     top: 0px !important;
 }
+
+
 /*      Navigation Bar
 ==============================*/
 
@@ -45,27 +50,50 @@ background-size: cover;*/
     /*	opacity: 0;*/
     top: 0px;
 }
+
 #m_nav_bar {
     width: 80%;
     margin: auto;
 }
+
 #m_nav_list {
-	list-style: none;
+    list-style: none;
     padding: 0;
     margin: 1.5em 0 0 0;
 }
+
 .m_nav_item {
-    margin-top: 15px;
+    margin-top: 5px;
 }
+
 .m_nav_item a {
     text-decoration: none;
-    color: white;/* text color*/
+    color: white;
+    /* text color*/
     font-size: 1em;
     -webkit-transition-duration: 0.5s;
 }
+
 .m_nav_item a:hover {
     color: #b5b5b5;
 }
+
+.resume {
+    margin-top: 5px;
+}
+
+.resume a {
+    text-decoration: none;
+    color: white;
+    /* text color*/
+    font-size: 1em;
+    -webkit-transition-duration: 0.5s;
+}
+
+.resume a:hover {
+    color: #b5b5b5;
+}
+
 /*classes for jQuery function*/
 
 .container_open {
@@ -73,8 +101,11 @@ background-size: cover;*/
     display: block;
     height: 120px;
 }
+
+
 /*  Navigation Hamburger Icon
 ==============================*/
+
 
 /*icon container*/
 
@@ -87,6 +118,8 @@ background-size: cover;*/
     padding: .5em;
     background: rgba(0, 0, 0, 0.5);
 }
+
+
 /*class applied to create the lines*/
 
 .m_nav_ham {
@@ -95,6 +128,7 @@ background-size: cover;*/
     background: #fff;
     margin: 5px auto;
 }
+
 .m_nav_ham_1_open {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -102,6 +136,7 @@ background-size: cover;*/
     transform: rotate(45deg);
     margin-top: 15px;
 }
+
 .m_nav_ham_2_open {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -109,9 +144,12 @@ background-size: cover;*/
     transform: rotate(-45deg);
     margin-top: -10px;
 }
+
 .m_nav_ham_3_open {
     opacity: 0;
 }
+
+
 /*classes used to change the button's format based on jquery toggle
 In future releases this will be used to animate the m_nav_ham divs to form 
 an X*/
@@ -120,7 +158,10 @@ an X*/
     background: white;
     /*	-webkit-transform: rotate(45deg);*/
 }
+
 .button_closed {}
+
+
 /*      Header
 ==============================*/
 
@@ -134,7 +175,10 @@ an X*/
     text-align: center;
     margin-top: 0px;
 }
+
+
 /*#header*/
+
 
 /*      Sections
 ==============================*/
@@ -146,41 +190,55 @@ an X*/
     margin-top: 0px;
     float: left;
 }
+
+
 /*      Section 1
 ==============================*/
 
 #section_1 {
     background-color: #df32df;
 }
+
+
 /*      Section 2
 ==============================*/
 
 #section_2 {
     background-color: #47e3ff;
 }
+
+
 /*      Section 3
 ==============================*/
 
 #section_3 {
     background-color: #47ffbf;
 }
+
 #section_3 p, #section_3 h1 {
     color: #333 !important;
 }
+
+
 /*      Section 4
 ==============================*/
 
 #section_4 {
     background-color: #6347ff;
 }
+
+
 /*      Section 5
 ==============================*/
 
 #section_5 {
     background-color: #ffbf47;
 }
+
+
 /*      Media Queries
 ==============================*/
+
 
 /*Media query for all non-mobile devices*/
 
@@ -199,6 +257,15 @@ an X*/
         margin-top: 10px;
         font-size: 1.2em;
     }
+    .resume {
+        display: inline;
+        line-height: 100px;
+        margin-right: 50px;
+    }
+    .resume a {
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
     #m_nav_item_1 {
         margin-left: 5px;
     }
@@ -207,20 +274,19 @@ an X*/
         top: 130px !important;
     }
 }
+
+
 /*Media query for larger, non-mobile devices*/
 
 @media screen and (min-width: 1150px) {
     #m_nav_container {
-         text-align: center;
-		height: 125px !important;
-		box-shadow: 0 0 2px #000;
+        text-align: center;
+        height: 125px !important;
+        box-shadow: 0 0 2px #000;
     }
-
-
-	#m_nav_menu {
-		top: 37px;
-	}
-
+    #m_nav_menu {
+        top: 37px;
+    }
     .m_nav_item {
         display: inline;
         line-height: 70px;
@@ -229,12 +295,25 @@ an X*/
     }
     .m_nav_item a {
         margin-top: 10px;
-		font-size: 1.2em;
-		font-weight: 600;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .resume {
+        display: inline;
+        line-height: 70px;
+        margin-right: 80px;
+        padding-bottom: 10px
+    }
+    .resume a {
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: 600;
     }
     /*#toggle_m_nav{
 	display: none;
 }*/
 }
+
+
 /*
 Media query for mid-size non-mobile devices*/

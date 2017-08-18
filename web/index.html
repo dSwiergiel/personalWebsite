@@ -5,7 +5,7 @@ Author: Deven Swiergiel
 <html lang="en">
 
 <head>
-    <title>Deven Swiergiel | Home</title>
+    <title>Deven Swiergiel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Deven Swiergiel, Deven, Swiergiel, devenswiergiel.com, devin swiergiel, devon swiergiel, Personal Website, Resume, Mobile, Responsive, Bootstrap Web Templates, 
@@ -108,7 +108,6 @@ Author: Deven Swiergiel
         </script>
 
         <div class="container">
-
             <div class="agile-logo" style="position:relative;">
                 <h1 style="display: inline-block;"><a href="index.html">Deven<span>Swiergiel</span></a></h1>
             </div>
@@ -127,10 +126,12 @@ Author: Deven Swiergiel
             <!-- menu -->
 
             <div class="w3l-banner-grids">
-                <!--<div class="col-md-8 w3ls-banner-right"> this should be used if the Job title, name, and sex column is used. Otherwise use col-md-12-->
+                <!--<div class="col-md-8 w3ls-banner-right"> this should be used if the Job title, name, and sex column is used. 
+                
+                wise use col-md-12-->
                 <div class="col-md-12">
 
-                    <!-- TESTING
+                    <!--                TESTING
                     <div class="cardBox banner-right-img" style="width: 100%; height: 100%;">
                         <img src="images/1.jpg" alt="John" style="width:100%">
                         <div class="containers">
@@ -181,27 +182,93 @@ Author: Deven Swiergiel
                             font-size: 22px;
                             color: black;
                         }
-                    </style>  -->
+                    </style> 
+                
+                -->
+
+
 
                     <div class="banner-right-img">
                         <img src="images/1.jpg" alt="Picture of Deven Swiergiel" />
                     </div>
 
-                    <div class="banner-right-info">
-                        <p style="margin-top: 0px;">My name is Deven Swiergiel and I am a Software Engineer/Developer and Senior in college currently
-                            working for the government as a Software Developer Intern while working towards a B.S in Computer
-                            Science and Applied Mathematics. I have experience working on a team as well as by myself creating
-                            and deploying enterprise software and systems for New York State. I enjoy learning new skills
-                            and love creating even more.</p>
-                        <p>This website was designed and created by me. If you'd like, explore it to learn more about me!</p>
 
+                    <div class="banner-right-info">
+                        <p style="margin-top: 0px;">I am a Software Engineer/Developer and Senior in college currently working for the government as
+                            a Software Developer Intern while working towards a B.S in Computer Science and Applied Mathematics.
+                            I have experience working on a team as well as by myself creating and deploying enterprise software
+                            and systems for New York State. I enjoy learning new skills and love creating even more.</p>
+                        <p>This website was designed and created by me. If you'd like, explore it to learn more about me!</p>
+                        <!--Popup Modal for QR code site  -->
+
+                         <!-- The Modal  -->
+                         
+                        <!-- <div id="myModal" class="modal"> -->
+
+                            <!-- Modal content -->
+                            <!-- <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                    <h3 style="margin: 0px;">Hello Prospective Employer</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="margin: 0px; text-align: center;" class="mobileModalText">I'm glad the QR Code caught your attention!</p>
+                                    <p style="text-align: center;" class="mobileModalText">While this site is fully responsive for mobile devices, the truth is, I really just made
+                                        the QR code so you'd notice my resume in a sea of others. If you are on a mobile
+                                        device consider visiting on a desktop; it looks even better!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <h3 style="margin: 0px;">Deven Swiergiel</h3>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <script>
+                            // Get the modal
+                            var modal = document.getElementById('myModal');
+
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
+
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
+
+                            // When the user clicks the button, open the modal 
+
+                            function popup() {
+
+                                modal.style.display = "block";
+
+                            };
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function () {
+                                modal.style.display = "none";
+                            }
+
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script> -->
+                        <!--//Popup Modal for QR code site  -->
+                        
                     </div>
 
                     <!--<div class="clearfix"> </div>-->
                     <div id="buttonCluster" class="banner-right-info">
-                        <div class="w3-button">
-                            <div class="w3-button-info m_nav_item">
-                                <a class="hvr-sweep-to-bottom" href="#contact">Contact Me</a>
+                        <div>
+                            <div class="w3-button" style="float: left; width: 160px;">
+                                <div class="w3-button-info m_nav_item">
+                                    <a class="hvr-sweep-to-bottom" href="#contact">Contact Me</a>
+                                </div>
+
+                            </div>
+                            <div class="w3-button" style="display: inline-block; width: 160px;">
+                                <div class="w3-button-info resume">
+                                    <a class="hvr-sweep-to-bottom" href="http://devenswiergiel.com/currentresume.pdf" target="_blank">Resume</a>
+                                </div>
                             </div>
                         </div>
                         <div class="social-grids">
@@ -354,12 +421,12 @@ Author: Deven Swiergiel
                 <script src="js/jarallax.js"></script>
                 <script src="js/SmoothScroll.min.js"></script>
                 <script type="text/javascript">
-                    /* init Jarallax */
-                    $('.jarallax').jarallax({
-                        speed: 0.5,
-                        imgWidth: 1366,
-                        imgHeight: 768
-                    })
+                            /* init Jarallax */
+                            $('.jarallax').jarallax({
+                                speed: 0.5,
+                                imgWidth: 1366,
+                                imgHeight: 768
+                            })
                 </script>
             </div>
         </div>
@@ -693,6 +760,7 @@ Author: Deven Swiergiel
                             <div class="clearfix"> </div>
                         </div>
                     </div>
+
                     <!-- Other Tab -->
                     <div role="tabpanel" class="tab-pane fade" id="other" aria-labelledby="other-tab">
                         <div class="w3_tab_img">
@@ -721,9 +789,9 @@ Author: Deven Swiergiel
             <script src="js/jquery.mobile.custom.min.js"></script>
             <script src="js/jquery.cm-overlay.js"></script>
             <script>
-                    $(document).ready(function () {
-                        $('.cm-overlay').cmOverlay();
-                    });
+                            $(document).ready(function () {
+                                $('.cm-overlay').cmOverlay();
+                            });
             </script>
 
         </div>
@@ -806,9 +874,9 @@ Author: Deven Swiergiel
 
                         count++;
                         if (count >= 3) {
-                            window.location = "http://devenswiergiel.com/easteregg"; 
+                            window.location = "http://devenswiergiel.com/easteregg";
                         }
-                    } 
+                    }
                 </script>
                 <p onClick="easter()" style="display: inline-block">© </p>
                 <p style="display: inline-block">&nbsp;2017 Deven Swiergiel. All rights reserved.</p>
