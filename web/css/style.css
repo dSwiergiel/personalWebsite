@@ -1,3 +1,5 @@
+
+
 .modal {
     display: none;
     position: fixed;
@@ -861,7 +863,7 @@ body {
     margin-top: 0;
 }
 
-.contact input[type="text"], .contact textarea {
+.contact input[type="text"], input[type="email"], .contact textarea {
     font-size: .9em;
     color: #8c8c8c;
     padding: 0.5em 1em;
@@ -878,7 +880,7 @@ body {
     resize: none;
 }
 
-.styled-input input:focus ~ label, .styled-input input:valid ~ label, .styled-input textarea:focus ~ label, .styled-input textarea:valid ~ label {
+.styled-input input:focus ~ label, .styled-input input:valid ~ label,  .styled-input input[required]:invalid ~ label, .styled-input textarea:focus ~ label, .styled-input textarea:valid ~ label {
     font-size: .9em;
     color: #333333;
     top: -1.3em;
