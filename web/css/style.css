@@ -1117,7 +1117,7 @@ body {
         margin: 1em 0 0 0;
     }
     .banner-right-img {
-        width: 36%;
+        width: 50%;
         margin: 0 auto;
     }
     .w3-button {
@@ -1128,7 +1128,7 @@ body {
         width: 30%;
     }
     #m_nav_menu {
-        right: 100px!important;
+        right: 31px!important;
     }
     .wthree-about-right {
         margin: 2em 0 0 0;
@@ -1175,6 +1175,12 @@ body {
     }
 }
 
+@media(max-width:779px) {
+    .m_nav_item {
+        font-size: 19px;
+    }
+}
+
 @media(max-width:736px) {
     #m_nav_menu {
         right: 16px!important;
@@ -1182,9 +1188,7 @@ body {
     .nav-tabs {
         width: 71%;
     }
-    #m_nav_container {
-        height: 230px !important;
-    }
+
 }
 
 @media(min-width:1201px) {
