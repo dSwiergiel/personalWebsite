@@ -1176,7 +1176,7 @@ body {
 }
 
 @media(max-width:759px) {
-    .m_nav_item {
+    ul.m_nav_item {
         font-size: 19px;
     }
 }
@@ -1356,6 +1356,12 @@ body {
     }
 }
 
+@media(max-width: 429px){
+    .infoButtons{
+        margin: 2px;
+    }
+}
+
 @media(max-width:414px) {
     .wthree-about-left h3, .wthree-about-right h3, .w3-agileits-education-heading h3 {
         font-size: 1.5em;
@@ -1430,7 +1436,7 @@ body {
     }
 }
 
-@media(min-width:321px) and (max-width:381px) {
+@media(min-width:321px) and (max-width:422px) {
     #FindMe {
         padding-bottom: 10px;
     }
