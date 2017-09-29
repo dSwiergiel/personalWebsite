@@ -242,7 +242,7 @@ an X*/
 
 /*Media query for all non-mobile devices*/
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 760px) {
     /*Nav bar media queries!*/
     #m_nav_container {
         text-align: left;
