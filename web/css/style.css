@@ -1128,7 +1128,7 @@ body {
         width: 30%;
     }
     #m_nav_menu {
-        right: 31px!important;
+        right: 20px!important;
     }
     .wthree-about-right {
         margin: 2em 0 0 0;
@@ -1166,9 +1166,9 @@ body {
     }
 }
 
-@media(max-width:800px) {
+@media(max-width:750px) {
     #m_nav_menu {
-        right: 31px!important;
+        right: 20px!important;
     }
     .nav-tabs {
         width: 70%;
@@ -1176,7 +1176,7 @@ body {
 }
 
 @media(max-width:759px) {
-    ul.m_nav_item {
+    li.m_nav_item  {
         font-size: 19px;
     }
 }
