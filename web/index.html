@@ -74,6 +74,29 @@ Author: Deven Swiergiel
     </script>
     <!-- //menu -->
 
+    <!-- GOOGLE'S reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- Script to validate whether the catpcha has been checked, otherwise, keep send button disabled -->
+    <script>
+
+        // document.getElementById("submitButton").disabled = true;
+
+        function enableBtn() {
+            document.getElementById("submitButton").disabled = false;
+        }
+    </script>
+    <!-- Grey out submit button until user verifies through google's reCAPTCHA -->
+    <style>
+        html input[disabled] {
+            color: white!important;
+            background-color: grey!important;
+            border: grey!important;
+            /* background-color: #004080!important;
+            border: #004080!important; */
+        }
+    </style>
+
 </head>
 
 <!-- Uncomment for QR version -->
@@ -421,7 +444,8 @@ Author: Deven Swiergiel
                                 <h5>New York State Information Technology Services
                                     <br> March 2017 - Present</h5>
                                 <p>Work with other developers to create and deploy enterprise software and systems for
-                                    <br> New York State using technologies such as Angular, C#, SQL, Java, and more. Check out the projects section of the site to see what I've been working on at NYS ITS.</p>
+                                    <br> New York State using technologies such as Angular, C#, SQL, Java, and more. Check out
+                                    the projects section of the site to see what I've been working on at NYS ITS.</p>
                             </div>
                         </div>
                         <div class="clearfix"> </div>
@@ -582,8 +606,11 @@ Author: Deven Swiergiel
 
                             <div class="container">
                                 <p class="paragraph">This is a simple rental estimator web application that I made for a real estate investment
-                                    group that I am part of. Given some parameters, this tool will estimate how many properties and units, along with other metrics, you could have by a certain
-                                    year assuming you re-invest monthly cash flow. I plan to add panels projecting and charting equity growth using user-specified amortization schedules in a later version. It was built using HTML5, CSS3, FontAwesome, and Bootstrap.
+                                    group that I am part of. Given some parameters, this tool will estimate how many properties
+                                    and units, along with other metrics, you could have by a certain year assuming you re-invest
+                                    monthly cash flow. I plan to add panels projecting and charting equity growth using user-specified
+                                    amortization schedules in a later version. It was built using HTML5, CSS3, FontAwesome,
+                                    and Bootstrap.
                                     <a target="_blank" href="http://devenswiergiel.com/rentalestimator">Click here to try it out!</a>
                             </div>
                             </p>
@@ -621,8 +648,7 @@ Author: Deven Swiergiel
                                 <a target="_blank" href="images/Rental_mobile.png">
                                     <img src="images/Rental_mobile.png" alt="Shows the app in mobile form-factors" width="400" height="400">
                                 </a>
-                                <div class="desc">This is what it looks on mobile devices. Pictures show a 5.5in
-                                    screen.
+                                <div class="desc">This is what it looks on mobile devices. Pictures show a 5.5in screen.
                                 </div>
                             </div>
                         </div>
@@ -856,7 +882,7 @@ Author: Deven Swiergiel
                     <p style="text-align: center;">Or Email: Devenswiergiel@gmail.com</p>
                 </div>
                 <div class="contact-form">
-                    <form name="myemailform" action="form-to-email.php" method="post">
+                    <form name="myemailform" action="recaptcha-send-email.php" enctype="multipart/form-data" method="post">
                         <div class="fields-grid">
                             <div class="styled-input agile-styled-input-top">
                                 <input type="text" name="name" required="">
@@ -885,7 +911,9 @@ Author: Deven Swiergiel
                             <label>Message</label>
                             <span></span>
                         </div>
-                        <input type="submit" value="SEND">
+
+                        <div class="g-recaptcha" data-sitekey="6Le7zTYUAAAAAJV1h5fxP0d1FZJYGF_P2pFuJRFc" data-callback="enableBtn"></div>
+                        <input disabled id="submitButton" type="submit" value="SEND">
                     </form>
                 </div>
             </div>
@@ -912,6 +940,7 @@ Author: Deven Swiergiel
         <!-- //copyright -->
 
         <script src="js/bars.js"></script>
+
 
 </body>
 
