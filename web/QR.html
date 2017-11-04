@@ -43,6 +43,7 @@ Author: Deven Swiergiel
     <script>
         $(window).bind('scroll load', function () {
 
+            // if window is wide enough to display full menu
             if ($(window).width() > 1200) {
 
                 if ($(window).scrollTop() < 75) {
@@ -53,12 +54,13 @@ Author: Deven Swiergiel
                     $('#toggle_m_nav').show();
 
                 }
-            } else {
+            } else { // otherwise show floating hamburger menu button
                 $('#toggle_m_nav').show();
 
             }
         });
 
+        // if the window is resized
         $(window).bind('resize load', function () {
             if ($(window).width() < 1200) {
                 $('#toggle_m_nav').show();
@@ -71,6 +73,15 @@ Author: Deven Swiergiel
                 $('#largeMenu').show();
             }
         });
+
+        //hides the dropdown menu if the fixed menu is in site 
+            $(window).bind('scroll', function () {
+                if ($(window).scrollTop() < 75) {
+                    $('#m_nav_container').hide();
+                }
+
+            });
+
     </script>
     <!-- //menu -->
 
@@ -80,18 +91,19 @@ Author: Deven Swiergiel
     <!-- Script to validate whether the catpcha has been checked, otherwise, keep send button disabled -->
     <script>
 
-        // document.getElementById("submitButton").disabled = true;
-
         function enableBtn() {
             document.getElementById("submitButton").disabled = false;
         }
     </script>
-    <!-- Grey out submit button until user verifies through google's reCAPTCHA -->
+
+    <!-- Grey out submit button while it's disabled(until user verifies through google's reCAPTCHA)-->
     <style>
         html input[disabled] {
             color: white!important;
             background-color: grey!important;
             border: grey!important;
+            /* background-color: #004080!important;
+            border: #004080!important; */
         }
     </style>
 
@@ -134,14 +146,7 @@ Author: Deven Swiergiel
             </ul>
         </div>
 
-        <script>
-            $(window).bind('scroll', function () {
-                if ($(window).scrollTop() < 75) {
-                    $('#m_nav_container').hide();
-                }
 
-            });
-        </script>
 
         <div class="container">
             <div class="agile-logo" style="position:relative;">

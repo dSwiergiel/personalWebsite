@@ -597,8 +597,9 @@ body {
 }
 
 .education {
-    background: url(../images/6.jpg) no-repeat 0px 0px;
+    background: url(../images/books2.jpg) no-repeat 0px 0px;
     background-size: cover;
+    box-shadow: 100vw 100vh rgba(0, 0, 0, 0.8) inset;
 }
 
 .jarallax {
