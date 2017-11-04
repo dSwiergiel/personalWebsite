@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Deven Swiergiel, Deven, Swiergiel, Personal Website, Weight, Mobile, Responsive, Bootstrap, Weight Converter, 
+	Smartphone Compatible, web, unit, unit converter, unit conversion, weight conversion" />
+
+  <!-- use bootstrap without downloading it.  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+
+  <style>
+    body {
+      margin-top: 70px;
+      background: #333;
+      color: #fff;
+    }
+
+    @media(min-width: 415px) {
+      .mobileSubHeader {
+        font-size: 30px;
+      }
+      .mobileSubHeader {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media(max-width: 414px) {
+      .mobileHeader {
+        font-size: 40px;
+      }
+      .mobileSubHeader {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      .marginTop {
+        margin-top: 10px;
+      }
+    }
+  </style>
+  <title>Weight Converter</title>
+</head>
+
+<body class="marginTop">
+  <div class="container ">
+    <div class="row ">
+      <div class="col-md-6 offset-md-3 ">
+        <h1 class="display-4 text-center mobileHeader">Weight Converter</h1>
+        <p class="lead text-center mobileSubHeader">Created by Deven Swiergiel</p>
+        <form>
+          <div class="form-group">
+
+            <select id="units" name="units" class="form-control form-control-lg">
+              <option value="" disabled selected>Select a unit of measurement...</option>
+              <option value="Kilograms">Kilograms</option>
+              <option value="Ounces">Ounces</option>
+              <option value="Pounds">Pounds</option>
+              <option value="Grams">Grams</option>
+            </select>
+
+            <input id="input" type="number" class="form-control form-control-lg mt-2" placeholder="">
+
+          </div>
+        </form>
+        <div id="output">
+          <div id="gram" class="card card-primary mb-2">
+            <div class="card-block">
+              <h4>Grams:</h4>
+              <div id="gramsOutput"></div>
+            </div>
+          </div>
+
+          <div id="kilo" class="card card-success mb-2">
+            <div class="card-block">
+              <h4>Kilograms:</h4>
+              <div id="kgOutput"></div>
+            </div>
+          </div>
+
+          <div id="oz" class="card card-warning mb-2">
+            <div class="card-block">
+              <h4>Ounces:</h4>
+              <div id="ozOutput"></div>
+            </div>
+          </div>
+
+          <div id="lbs" class="card card-danger mb-2">
+            <div class="card-block">
+              <h4>Pounds:</h4>
+              <div id="lbsOutput"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('output').style.visibility = 'hidden';
+    document.getElementById('input').style.visibility = 'hidden';
+    // get unit first
+    document.getElementById('units').addEventListener('change', function (e) {
+
+      // make input visible
+      document.getElementById('input').style.visibility = 'visible';
+
+      // get selected value 
+      let unit = e.target.value;
+
+      // changes input text to selcted value
+      document.getElementById('input').placeholder = "Enter a wieght in " + unit;
+
+      // hide the selected from the shown output
+      if (unit == "Grams") {
+        document.getElementById('gram').style.display = "none";
+        document.getElementById('kilo').style.display = "block";
+        document.getElementById('oz').style.display = "block";
+        document.getElementById('lbs').style.display = "block";
+      }
+      else if (unit == "Kilograms") {
+        document.getElementById('kilo').style.display = "none";
+        document.getElementById('gram').style.display = "block";
+        document.getElementById('oz').style.display = "block";
+        document.getElementById('lbs').style.display = "block";
+
+      }
+      else if (unit == "Ounces") {
+        document.getElementById('oz').style.display = "none";
+        document.getElementById('kilo').style.display = "block";
+        document.getElementById('gram').style.display = "block";
+        document.getElementById('lbs').style.display = "block";
+
+      }
+      else if (unit == "Pounds") {
+        document.getElementById('lbs').style.display = "none";
+        document.getElementById('kilo').style.display = "block";
+        document.getElementById('oz').style.display = "block";
+        document.getElementById('gram').style.display = "block";
+
+      }
+
+      convert(unit);
+
+      // Displays output when input has a value
+      document.getElementById('input').addEventListener('input', function () {
+
+        // make conversions visible
+        document.getElementById('output').style.visibility = 'visible';
+
+        convert(unit);
+      });
+
+    });
+
+    function convert(unit) {
+
+      let weight = document.getElementById('input').value;
+
+      if (unit == "Grams") {
+
+        document.getElementById('lbsOutput').innerHTML = weight * 0.00220462;
+        document.getElementById('kgOutput').innerHTML = weight * 0.001;
+        document.getElementById('ozOutput').innerHTML = weight * 0.035274;
+      }
+      else if (unit == "Kilograms") {
+
+        document.getElementById('lbsOutput').innerHTML = weight * 2.20462;
+        document.getElementById('gramsOutput').innerHTML = weight * 1000;
+        document.getElementById('ozOutput').innerHTML = weight * 35.274;
+      }
+      else if (unit == "Ounces") {
+
+        document.getElementById('lbsOutput').innerHTML = weight * 0.0625;
+        document.getElementById('kgOutput').innerHTML = weight * 0.0283495;
+        document.getElementById('gramsOutput').innerHTML = weight * 28.3495;
+      }
+      else if (unit == "Pounds") {
+
+        document.getElementById('gramsOutput').innerHTML = weight * 453.592;
+        document.getElementById('kgOutput').innerHTML = weight * 0.453592;
+        document.getElementById('ozOutput').innerHTML = weight * 16;
+      }
+    }
+  </script>
+</body>
+
+</html>
