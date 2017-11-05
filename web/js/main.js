@@ -7,8 +7,6 @@ $(document).ready(function () {
 });
 
 
-
-
 var toggle_nav_container = function () {
 
 
