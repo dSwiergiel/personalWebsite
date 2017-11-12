@@ -44,7 +44,7 @@
         Name: $name. 
         Email: $visitor_email.
         Phone: $phone  . 
-        Conpany: $company  . \n\n";
+        Company: $company  . \n\n";
             
         $to = "devenswiergiel@gmail.com";//<== update the email address
         $headers = "From: $email_from \r\n";

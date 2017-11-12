@@ -136,7 +136,8 @@ div.desc {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-size: 25px;
+    line-height: 1.8em;
+    font-size: 22px;
     color: grey;
 }
 
@@ -632,7 +633,7 @@ body {
     color: #FFFFFF;
     font-size: 20px;
     margin: 1em 0 0 0;
-    font-weight: 600;
+    /* font-weight: 600; */
     letter-spacing: 1px;
 }
 
@@ -1354,6 +1355,18 @@ body {
     }
     .nav-tabs > li > a {
         padding: 5px 8px;
+    }
+    .paragraph {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        line-height: 1.5em;
+        font-size: 20px;
+        color: grey;
+    }
+    .aboutMe {
+        line-height: 1.5em;
+        font-size: 18px;
+        color: grey;
     }
 }
 
