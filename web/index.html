@@ -55,7 +55,6 @@ Author: Deven Swiergiel
 
             }
         });
-
         // if the window is resized
         $(window).bind('resize load', function () {
             if ($(window).width() < 1200) {
@@ -494,10 +493,14 @@ Author: Deven Swiergiel
 
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">NYS ITS</a>
+
+                    <li role="presentation">
+                        <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Pi Relay Controller</a>
                     </li>
                     <li role="presentation">
+                        <a href="#NYSITS" id="NYSITS-tab" role="tab" data-toggle="tab" aria-controls="NYSITS">NYS ITS</a>
+                    </li>
+                    <li role="presentation" class="active">
                         <a href="#RentalEstimator" role="tab" id="RentalEstimator-tab" data-toggle="tab" aria-controls="learning">Rental Estimator</a>
                     </li>
                     <li role="presentation">
@@ -518,10 +521,70 @@ Author: Deven Swiergiel
                 </div>
                 <div id="myTabContent" class="tab-content">
 
-                    <div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+                    <!-- PI Relay Controller tab  -->
+                    <div role="tabpanel" class="tab-pane fade " id="home-main" aria-labelledby="home-tab">
                         <div class="w3_tab_img">
 
-                            <!-- NYS ITS tab  -->
+                            <div class="container">
+                                <p class="paragraph">This is a web application myself and one other developer have been working on. Below are
+                                    pictures of some of the parts I am responsible for on both the front end and back end.
+                                    This will be used by New York State ITS employees to manage our use of IBM's FileNet.
+                                    It was built using Angular 4 and Bootstrap for the front end, and C#, .net, Rest API,
+                                    SQL server, and Entity for the backend.</p>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Left_Side">
+                                    <a target="_blank" href="images/relay_login.png">
+                                        <img src="images/relay_login.png" alt="Contacts edit page" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This page allows you to edit contacts and see the Object Stores associated with that
+                                        contact.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/relay.png">
+                                        <img src="images/relay.png" alt="Contacts page" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This shows all the contacts within the system. There will be hundreds once this goes
+                                        live.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/relay_timer.png">
+                                        <img src="images/relay_timer.png" alt="Database page" width="600" height="600">
+                                    </a>
+                                    <div class="desc">This shows all the databases within the system. There will be many more once this goes
+                                        live.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/relay_mobile.png">
+                                        <img src="images/relay_mobile.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">Responsive pages shown in mobile form-factor.</div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"> </div>
+
+                        </div>
+                    </div>
+
+                    <!-- NYS ITS tab  -->
+                    <div role="tabpanel" class="tab-pane fade" id="NYSITS" aria-labelledby="NYSITS-tab">
+                        <div class="w3_tab_img">
+
                             <div class="container">
                                 <p class="paragraph">This is a web application myself and one other developer have been working on. Below are
                                     pictures of some of the parts I am responsible for on both the front end and back end.
@@ -579,7 +642,7 @@ Author: Deven Swiergiel
                     </div>
 
                     <!-- Rental Estimator Tab -->
-                    <div role="tabpanel" class="tab-pane fade" id="RentalEstimator" aria-labelledby="RentalEstimator-tab">
+                    <div role="tabpanel" class="tab-pane fade in active" id="RentalEstimator" aria-labelledby="RentalEstimator-tab">
                         <div class="w3_tab_img">
 
                             <div class="container">
@@ -587,8 +650,8 @@ Author: Deven Swiergiel
                                     group that I am part of. Given some parameters, this tool will estimate how many properties
                                     and units, along with other metrics, you could have by a certain year assuming you re-invest
                                     monthly cash flow. I plan to add panels projecting and charting equity growth using user-specified
-                                    amortization schedules in a later version. It was built using HTML5, CSS3, JavaScript, FontAwesome,
-                                    and Bootstrap.
+                                    amortization schedules in a later version. It was built using HTML5, CSS3, JavaScript,
+                                    FontAwesome, and Bootstrap.
                                     <a target="_blank" href="http://devenswiergiel.com/rentalestimator">Click here to try it out!</a>
                             </div>
                             </p>
