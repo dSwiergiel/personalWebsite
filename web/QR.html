@@ -71,41 +71,22 @@ Author: Deven Swiergiel
         });
 
         //hides the dropdown menu if the fixed menu is in site 
-            $(window).bind('scroll', function () {
-                if ($(window).scrollTop() < 75) {
-                    $('#m_nav_container').hide();
-                }
+        $(window).bind('scroll', function () {
+            if ($(window).scrollTop() < 75) {
+                $('#m_nav_container').hide();
+            }
 
-            });
+        });
 
     </script>
     <!-- //menu -->
 
-    <!-- GOOGLE'S reCAPTCHA -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <!-- Script to validate whether the catpcha has been checked, otherwise, keep send button disabled -->
-    <script>
-
-        function enableBtn() {
-            document.getElementById("submitButton").disabled = false;
-        }
-    </script>
-
-    <!-- Grey out submit button while it's disabled(until user verifies through google's reCAPTCHA)-->
-    <style>
-        html input[disabled] {
-            color: white!important;
-            background-color: grey!important;
-            border: grey!important;
-            /* background-color: #004080!important;
-            border: #004080!important; */
-        }
-    </style>
 
 </head>
 
 <!-- Uncomment for QR version -->
+
 <body onload="popup()">
     <!-- banner -->
     <div class="banner" id="home">
@@ -200,8 +181,8 @@ Author: Deven Swiergiel
 
                         <div id="myModal" class="modal">
 
-                        <!-- Modal content -->
-                        <div class="modal-content">
+                            <!-- Modal content -->
+                            <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
                                     <h3 style="margin: 0px;">Hello Prospective Employer</h3>
@@ -413,12 +394,12 @@ Author: Deven Swiergiel
                 <script src="js/jarallax.js"></script>
                 <script src="js/SmoothScroll.min.js"></script>
                 <script type="text/javascript">
-                    /* init Jarallax */
-                    $('.jarallax').jarallax({
-                        speed: 0.5,
-                        imgWidth: 1366,
-                        imgHeight: 768
-                    })
+                            /* init Jarallax */
+                            $('.jarallax').jarallax({
+                                speed: 0.5,
+                                imgWidth: 1366,
+                                imgHeight: 768
+                            })
                 </script>
             </div>
         </div>
@@ -871,6 +852,28 @@ Author: Deven Swiergiel
 
 
         <!-- contact -->
+
+        <!-- GOOGLE'S reCAPTCHA -->
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+        <!-- Script to validate whether the catpcha has been checked, otherwise, keep send button disabled -->
+        <script>
+
+                    function enableBtn() {
+                        document.getElementById("submitButton").disabled = false;
+                    }
+        </script>
+
+        <!-- Grey out submit button while it's disabled(until user verifies through google's reCAPTCHA)-->
+        <style>
+            html input[disabled] {
+                color: white!important;
+                background-color: grey!important;
+                border: grey!important;
+                /* background-color: #004080!important;
+                border: #004080!important; */
+            }
+        </style>
         <div class="contact" style="padding-top: 0px;" id="contact">
             <div class="container">
                 <div class="w3-agileits-education-heading experience-heading">
