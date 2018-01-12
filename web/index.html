@@ -35,12 +35,12 @@ Author: Deven Swiergiel
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/main.js"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-9823825251368211",
-            enable_page_level_ads: true
-        });
-    </script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9823825251368211",
+    enable_page_level_ads: true
+  });
+</script>
 
     <!-- For hiding and showing menu button and bar according to scroll height  -->
     <script>
@@ -530,20 +530,15 @@ Author: Deven Swiergiel
                         <div class="w3_tab_img">
 
                             <div class="container">
-                                <p class="paragraph">This is a web application myself and one other developer have been working on. Below are
-                                    pictures of some of the parts I am responsible for on both the front end and back end.
-                                    This will be used by New York State ITS employees to manage our use of IBM's FileNet.
-                                    It was built using Angular 4 and Bootstrap for the front end, and C#, .net, Rest API,
-                                    SQL server, and Entity for the backend.</p>
+                                <p class="paragraph">Although it doesn't look like it, this web app has a lot going on under the hood. It was built to allow me to turn on an off my heat from anywhere in the world! I have electric heat and it's expensive so I don't want it on all day but I also want it to be warm when I come home. This was the solution. The front end is built using HTML, CSS, and JavaScript and the backend is Python, PHP, and a MySQL database because I don't want you to be able to control my heat! My web server host this app and then at home I have a 2-chanel relay hooked up to a raspberry pi zero w that is running a python script talking to my web server to see if a change has been made with the app.</p>
                             </div>
 
                             <div class="responsive">
                                 <div class="gallery zoom_Left_Side">
                                     <a target="_blank" href="images/relay_login.png">
-                                        <img src="images/relay_login.png" alt="Contacts edit page" width="600" height="auto">
+                                        <img src="images/relay_login.png" alt="Login screen" width="600" height="auto">
                                     </a>
-                                    <div class="desc">This page allows you to edit contacts and see the Object Stores associated with that
-                                        contact.
+                                    <div class="desc">This is the login screen to keep anybody but myself and girlfriend from controlling out heat.
                                     </div>
                                 </div>
                             </div>
@@ -551,10 +546,10 @@ Author: Deven Swiergiel
                             <div class="responsive">
                                 <div class="gallery zoom_center">
                                     <a target="_blank" href="images/relay.png">
-                                        <img src="images/relay.png" alt="Contacts page" width="600" height="auto">
+                                        <img src="images/relay.png" alt="main pi relay screen after login" width="600" height="auto">
                                     </a>
-                                    <div class="desc">This shows all the contacts within the system. There will be hundreds once this goes
-                                        live.
+                                    <div class="desc">This is the main screen after login.
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -562,10 +557,9 @@ Author: Deven Swiergiel
                             <div class="responsive">
                                 <div class="gallery zoom_center">
                                     <a target="_blank" href="images/relay_timer.png">
-                                        <img src="images/relay_timer.png" alt="Database page" width="600" height="600">
+                                        <img src="images/relay_timer.png" alt="Pi relay timer set." width="600" height="600">
                                     </a>
-                                    <div class="desc">This shows all the databases within the system. There will be many more once this goes
-                                        live.
+                                    <div class="desc">This shows the timer function. If the relay is already on, it will turn off at whatever time specified by me, and if it's off, it will turn on at the time set.
                                     </div>
                                 </div>
                             </div>
@@ -575,7 +569,7 @@ Author: Deven Swiergiel
                                     <a target="_blank" href="images/relay_mobile.png">
                                         <img src="images/relay_mobile.png" alt="Image of all pages on mobile device" width="600" height="600">
                                     </a>
-                                    <div class="desc">Responsive pages shown in mobile form-factor.</div>
+                                    <div class="desc">It was built with phone use in mind.</div>
                                 </div>
                             </div>
 
@@ -910,9 +904,9 @@ Author: Deven Swiergiel
             <script src="js/jquery.mobile.custom.min.js"></script>
             <script src="js/jquery.cm-overlay.js"></script>
             <script>
-                $(document).ready(function () {
-                    $('.cm-overlay').cmOverlay();
-                });
+                    $(document).ready(function () {
+                        $('.cm-overlay').cmOverlay();
+                    });
             </script>
 
         </div>
@@ -927,9 +921,9 @@ Author: Deven Swiergiel
         <!-- Script to validate whether the catpcha has been checked, otherwise, keep send button disabled -->
         <script>
 
-            function enableBtn() {
-                document.getElementById("submitButton").disabled = false;
-            }
+                    function enableBtn() {
+                        document.getElementById("submitButton").disabled = false;
+                    }
         </script>
 
         <!-- Grey out submit button while it's disabled(until user verifies through google's reCAPTCHA)-->

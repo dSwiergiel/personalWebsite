@@ -35,12 +35,12 @@ Author: Deven Swiergiel
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/main.js"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-9823825251368211",
-            enable_page_level_ads: true
-        });
-    </script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9823825251368211",
+    enable_page_level_ads: true
+  });
+</script>
 
     <!-- For hiding and showing menu button and bar according to scroll height  -->
     <script>
@@ -62,7 +62,6 @@ Author: Deven Swiergiel
 
             }
         });
-
         // if the window is resized
         $(window).bind('resize load', function () {
             if ($(window).width() < 1200) {
@@ -87,14 +86,12 @@ Author: Deven Swiergiel
 
     </script>
     <!-- //menu -->
-
-
-
 </head>
 
 <!-- Uncomment for QR version -->
-
 <body onload="popup()">
+
+<!-- <body> -->
     <!-- banner -->
     <div class="banner" id="home">
         <!-- menu -->
@@ -188,8 +185,8 @@ Author: Deven Swiergiel
 
                         <div id="myModal" class="modal">
 
-                            <!-- Modal content -->
-                            <div class="modal-content">
+                        <!-- Modal content -->
+                        <div class="modal-content">
                                 <div class="modal-header">
                                     <span class="close">&times;</span>
                                     <h3 style="margin: 0px;">Hello Prospective Employer</h3>
@@ -500,10 +497,14 @@ Author: Deven Swiergiel
 
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">NYS ITS</a>
+
+                    <li role="presentation">
+                        <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Pi Relay Controller</a>
                     </li>
                     <li role="presentation">
+                        <a href="#NYSITS" id="NYSITS-tab" role="tab" data-toggle="tab" aria-controls="NYSITS">NYS ITS</a>
+                    </li>
+                    <li role="presentation" class="active">
                         <a href="#RentalEstimator" role="tab" id="RentalEstimator-tab" data-toggle="tab" aria-controls="learning">Rental Estimator</a>
                     </li>
                     <li role="presentation">
@@ -524,10 +525,64 @@ Author: Deven Swiergiel
                 </div>
                 <div id="myTabContent" class="tab-content">
 
-                    <div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+                    <!-- PI Relay Controller tab  -->
+                    <div role="tabpanel" class="tab-pane fade " id="home-main" aria-labelledby="home-tab">
                         <div class="w3_tab_img">
 
-                            <!-- NYS ITS tab  -->
+                            <div class="container">
+                                <p class="paragraph">Although it doesn't look like it, this web app has a lot going on under the hood. It was built to allow me to turn on an off my heat from anywhere in the world! I have electric heat and it's expensive so I don't want it on all day but I also want it to be warm when I come home. This was the solution. The front end is built using HTML, CSS, and JavaScript and the backend is Python, PHP, and a MySQL database because I don't want you to be able to control my heat! My web server host this app and then at home I have a 2-chanel relay hooked up to a raspberry pi zero w that is running a python script talking to my web server to see if a change has been made with the app.</p>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Left_Side">
+                                    <a target="_blank" href="images/relay_login.png">
+                                        <img src="images/relay_login.png" alt="Login screen" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This is the login screen to keep anybody but myself and girlfriend from controlling out heat.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/relay.png">
+                                        <img src="images/relay.png" alt="main pi relay screen after login" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This is the main screen after login.
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/relay_timer.png">
+                                        <img src="images/relay_timer.png" alt="Pi relay timer set." width="600" height="600">
+                                    </a>
+                                    <div class="desc">This shows the timer function. If the relay is already on, it will turn off at whatever time specified by me, and if it's off, it will turn on at the time set.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/relay_mobile.png">
+                                        <img src="images/relay_mobile.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">It was built with phone use in mind.</div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"> </div>
+
+                        </div>
+                    </div>
+
+                    <!-- NYS ITS tab  -->
+                    <div role="tabpanel" class="tab-pane fade" id="NYSITS" aria-labelledby="NYSITS-tab">
+                        <div class="w3_tab_img">
+
                             <div class="container">
                                 <p class="paragraph">This is a web application myself and one other developer have been working on. Below are
                                     pictures of some of the parts I am responsible for on both the front end and back end.
@@ -585,7 +640,7 @@ Author: Deven Swiergiel
                     </div>
 
                     <!-- Rental Estimator Tab -->
-                    <div role="tabpanel" class="tab-pane fade" id="RentalEstimator" aria-labelledby="RentalEstimator-tab">
+                    <div role="tabpanel" class="tab-pane fade in active" id="RentalEstimator" aria-labelledby="RentalEstimator-tab">
                         <div class="w3_tab_img">
 
                             <div class="container">
@@ -849,9 +904,9 @@ Author: Deven Swiergiel
             <script src="js/jquery.mobile.custom.min.js"></script>
             <script src="js/jquery.cm-overlay.js"></script>
             <script>
-                $(document).ready(function () {
-                    $('.cm-overlay').cmOverlay();
-                });
+                    $(document).ready(function () {
+                        $('.cm-overlay').cmOverlay();
+                    });
             </script>
 
         </div>
@@ -866,9 +921,9 @@ Author: Deven Swiergiel
         <!-- Script to validate whether the catpcha has been checked, otherwise, keep send button disabled -->
         <script>
 
-            function enableBtn() {
-                document.getElementById("submitButton").disabled = false;
-            }
+                    function enableBtn() {
+                        document.getElementById("submitButton").disabled = false;
+                    }
         </script>
 
         <!-- Grey out submit button while it's disabled(until user verifies through google's reCAPTCHA)-->
