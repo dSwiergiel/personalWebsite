@@ -34,6 +34,13 @@ Author: Deven Swiergiel
     <!-- menu -->
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/main.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9823825251368211",
+    enable_page_level_ads: true
+  });
+</script>
 
     <!-- For hiding and showing menu button and bar according to scroll height  -->
     <script>
@@ -167,7 +174,7 @@ Author: Deven Swiergiel
 
                     <div class="banner-right-info">
                         <p class="aboutMe" style="margin-top: 0px;">My name is Deven Swiergiel and I am a Software Engineer/Developer and Senior in college currently
-                            working for the government as a Software Developer Intern while working towards a dual B.S in
+                            working for the government as a Software Developer while working towards a dual B.S in
                             Computer Science and Applied Mathematics. I have experience working on a team as well as by myself
                             creating and deploying enterprise software and systems for New York State. I enjoy learning new
                             skills and love creating even more.</p>
@@ -379,7 +386,7 @@ Author: Deven Swiergiel
                         </h4>
                         <div class="gpaToolTip">
                             <span class="gpaTipText">GPA</span>
-                            <i id="UA" class="fa fa-blank" aria-hidden="true">3.73</i>
+                            <i id="UA" class="fa fa-blank" aria-hidden="true">3.76</i>
                         </div>
                         <p style="letter-spacing: 2px; font-weight: 300!important">B.S Computer Science and Applied Mathematics
                             <br>
@@ -491,13 +498,21 @@ Author: Deven Swiergiel
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
 
+<<<<<<< HEAD
                     <li role="presentation" class="active">
+=======
+                    <li role="presentation">
+>>>>>>> origin/master
                         <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Pi Relay Controller</a>
                     </li>
                     <li role="presentation">
                         <a href="#NYSITS" id="NYSITS-tab" role="tab" data-toggle="tab" aria-controls="NYSITS">NYS ITS</a>
                     </li>
+<<<<<<< HEAD
                     <li role="presentation" >
+=======
+                    <li role="presentation" class="active">
+>>>>>>> origin/master
                         <a href="#RentalEstimator" role="tab" id="RentalEstimator-tab" data-toggle="tab" aria-controls="learning">Rental Estimator</a>
                     </li>
                     <li role="presentation">
@@ -519,6 +534,7 @@ Author: Deven Swiergiel
                 <div id="myTabContent" class="tab-content">
 
                     <!-- PI Relay Controller tab  -->
+<<<<<<< HEAD
                     
                     <div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
                         <div class="w3_tab_img">
@@ -576,6 +592,65 @@ Author: Deven Swiergiel
                     <div role="tabpanel" class="tab-pane fade" id="NYSITS" aria-labelledby="NYSITS-tab">
                         <div class="w3_tab_img">
 
+=======
+                    <div role="tabpanel" class="tab-pane fade " id="home-main" aria-labelledby="home-tab">
+                        <div class="w3_tab_img">
+
+                            <div class="container">
+                                <p class="paragraph">Although it doesn't look like it, this web app has a lot going on under the hood. It was built to allow me to turn on an off my heat from anywhere in the world! I have electric heat and it's expensive so I don't want it on all day but I also want it to be warm when I come home. This was the solution. The front end is built using HTML, CSS, and JavaScript and the backend is Python, PHP, and a MySQL database because I don't want you to be able to control my heat! My web server hosts this app and then at home I have a 2-chanel relay hooked up to a raspberry pi zero w that is running a python script talking to my web server to see if a change has been made with the app.</p>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Left_Side">
+                                    <a target="_blank" href="images/relay_login.png">
+                                        <img src="images/relay_login.png" alt="Login screen" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This is the login screen to keep anybody but myself and girlfriend from controlling out heat.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/relay.png">
+                                        <img src="images/relay.png" alt="main pi relay screen after login" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This is the main screen after login.
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/relay_timer.png">
+                                        <img src="images/relay_timer.png" alt="Pi relay timer set." width="600" height="600">
+                                    </a>
+                                    <div class="desc">This shows the timer function. If the relay is already on, it will turn off at whatever time specified by me, and if it's off, it will turn on at the time set.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/relay_mobile.png">
+                                        <img src="images/relay_mobile.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">It was built with phone use in mind.</div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"> </div>
+
+                        </div>
+                    </div>
+
+                    <!-- NYS ITS tab  -->
+                    <div role="tabpanel" class="tab-pane fade" id="NYSITS" aria-labelledby="NYSITS-tab">
+                        <div class="w3_tab_img">
+
+>>>>>>> origin/master
                             <div class="container">
                                 <p class="paragraph">This is a web application myself and one other developer have been working on. Below are
                                     pictures of some of the parts I am responsible for on both the front end and back end.
@@ -633,7 +708,11 @@ Author: Deven Swiergiel
                     </div>
 
                     <!-- Rental Estimator Tab -->
+<<<<<<< HEAD
                     <div role="tabpanel" class="tab-pane fade " id="RentalEstimator" aria-labelledby="RentalEstimator-tab">
+=======
+                    <div role="tabpanel" class="tab-pane fade in active" id="RentalEstimator" aria-labelledby="RentalEstimator-tab">
+>>>>>>> origin/master
                         <div class="w3_tab_img">
 
                             <div class="container">
