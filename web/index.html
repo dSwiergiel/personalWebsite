@@ -169,10 +169,10 @@ Author: Deven Swiergiel
 
                     <div class="banner-right-info">
                         <p class="aboutMe" style="margin-top: 0px;">My name is Deven Swiergiel and I am a Software Engineer/Developer and Senior in college currently
-                            working for the government as a Software Developer while working towards a dual B.S in
-                            Computer Science and Applied Mathematics. I have experience working on a team as well as by myself
-                            creating and deploying enterprise software and systems for New York State. I enjoy learning new
-                            skills and love creating even more.</p>
+                            working for the government as a Software Developer while working towards a dual B.S in Computer
+                            Science and Applied Mathematics. I have experience working on a team as well as by myself creating
+                            and deploying enterprise software and systems for New York State. I enjoy learning new skills
+                            and love creating even more.</p>
                         <p>This website was designed and created by me. If you'd like, explore it to learn more about me!</p>
                         <!--Popup Modal for QR code site  -->
 
@@ -242,7 +242,8 @@ Author: Deven Swiergiel
                             </div>
                             <div class="w3-button infoButtons" style="display: inline-block; width: 160px;">
                                 <div class="w3-button-info resume navBtn">
-                                    <a class="hvr-sweep-to-bottom" style="letter-spacing: 2px; font-weight: 500!important" href="http://devenswiergiel.com/currentresume.pdf" target="_blank">Resume</a>
+                                    <a class="hvr-sweep-to-bottom" style="letter-spacing: 2px; font-weight: 500!important" href="http://devenswiergiel.com/currentresume.pdf"
+                                        target="_blank">Resume</a>
                                 </div>
                             </div>
                         </div>
@@ -497,9 +498,12 @@ Author: Deven Swiergiel
                         <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Pi Relay Controller</a>
                     </li>
                     <li role="presentation">
+                        <a href="#RentalAnalysis" id="RentalAnalysis-tab" role="tab" data-toggle="tab" aria-controls="RentalAnalysis">Rental Analysis Tool</a>
+                    </li>
+                    <li role="presentation">
                         <a href="#NYSITS" id="NYSITS-tab" role="tab" data-toggle="tab" aria-controls="NYSITS">NYS ITS</a>
                     </li>
-                    <li role="presentation" >
+                    <li role="presentation">
                         <a href="#RentalEstimator" role="tab" id="RentalEstimator-tab" data-toggle="tab" aria-controls="learning">Rental Estimator</a>
                     </li>
                     <li role="presentation">
@@ -521,54 +525,168 @@ Author: Deven Swiergiel
                 <div id="myTabContent" class="tab-content">
 
                     <!-- PI Relay Controller tab  -->
-                    
+
                     <div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
                         <div class="w3_tab_img">
 
-                            
-                                <div class="container">
-                                    <p class="paragraph">While this looks quite simple, this was one of my most involved personal projects yet. This app is connected to a Raspberry Pi Zero W which is connected to a 2-channel relay and it allows me to control anything plugged into it from anywhere in the world. I made this because my apartment has electric heat which is expensive. So I don't want to run it all day while I'm not home, but I want it to be warm when I come home. So this way I can turn it on an hour before I come home. This project involves a MySQL database to store authorized users like myself and my girlfriend, PHP backend, ajax calls, a CRON job, MD5 password encryption, and bootstrap.</p>                                </div>
 
-                                <div class="responsive " >
-                                    <div class="gallery  zoom_Left_Side">
-                                        <a target="_blank" href="images/relay_login.png">
-                                            <img src="images/relay_login.png" alt="Contacts page"  width="600px" height="auto">
-                                        </a>
-                                        <div class="desc">This is the login page so that only I can control the heat.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="responsive ">
-                                    <div class="gallery zoom_center">
-                                        <a target="_blank" href="images/relay_main.png">
-                                            <img src="images/relay_main.png" alt="Database page" width="600" height="auto">
-                                        </a>
-                                        <div class="desc">After login, you are presented with a control panel.
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="container">
+                                <p class="paragraph">While this looks quite simple, this was one of my most involved personal projects yet. This
+                                    app is connected to a Raspberry Pi Zero W which is connected to a 2-channel relay and
+                                    it allows me to control anything plugged into it from anywhere in the world. I made this
+                                    because my apartment has electric heat which is expensive. So I don't want to run it
+                                    all day while I'm not home, but I want it to be warm when I come home. With this, I can
+                                    turn it on an hour before I come home. This project involves a MySQL database to store
+                                    authorized users like myself and my girlfriend, PHP backend, ajax calls, a CRON job,
+                                    MD5 password encryption, and bootstrap.</p>
+                            </div>
 
-                                <div class="responsive ">
-                                    <div class="gallery zoom_Right_Side" >
-                                        <a target="_blank" href="images/relay_timer.png">
-                                            <img src="images/relay_timer.png" alt="Image of all pages on mobile device" width="600" height="auto">
-                                        </a>
-                                        <div class="desc">It also has a timer, so I can have it turn on or off at a certain time.</div>
+                            <div class="responsive ">
+                                <div class="gallery  zoom_Left_Side">
+                                    <a target="_blank" href="images/relay_login.png">
+                                        <img src="images/relay_login.png" alt="Contacts page" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This is the login page so that only I can control the heat.
                                     </div>
                                 </div>
-                                <div class="responsive " >
-                                    <div class="gallery zoom_Right_Side">
-                                        <a target="_blank" href="images/relay_mobile.png">
-                                            <img src="images/relay_mobile.png" alt="Image of all pages on mobile device" width="600" height="auto">
-                                        </a>
-                                        <div class="desc">And it is obviously mobile friendly.</div>
+                            </div>
+
+                            <div class="responsive ">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/relay_main.png">
+                                        <img src="images/relay_main.png" alt="Database page" width="600" height="600">
+                                    </a>
+                                    <div class="desc">After login, you are presented with a control panel.
                                     </div>
                                 </div>
-                            
+                            </div>
+
+                            <div class="responsive ">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/relay_timer.png">
+                                        <img src="images/relay_timer.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">It also has a timer, so I can have it turn on or off at a certain time.</div>
+                                </div>
+                            </div>
+                            <div class="responsive ">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/relay_mobile.png">
+                                        <img src="images/relay_mobile.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">And it is obviously mobile friendly.</div>
+                                </div>
+                            </div>
 
 
 
                             <div class="clearfix"> </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Rental Analysis Calculator tab  -->
+                    <div role="tabpanel" class="tab-pane fade" id="RentalAnalysis" aria-labelledby="RentalAnalysis-tab">
+                        <div class="w3_tab_img">
+
+                            <div class="container">
+                                <p class="paragraph">This is a web application myself and one other developer have been working on. Below are
+                                    pictures of some of the parts I am responsible for on both the front end and back end.
+                                    This will be used by New York State ITS employees to manage our use of IBM's FileNet.
+                                    It was built using Angular 4 and Bootstrap for the front end, and C#, .net, Rest API,
+                                    SQL server, and Entity for the backend.</p>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Left_Side">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Contacts edit page" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This page allows you to edit contacts and see the Object Stores associated with that
+                                        contact.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Contacts page" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This shows all the contacts within the system. There will be hundreds once this goes
+                                        live.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Database page" width="600" height="600">
+                                    </a>
+                                    <div class="desc">This shows all the databases within the system. There will be many more once this goes
+                                        live.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">Responsive pages shown in mobile form-factor.</div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"> </div>
+
+
+                            <!-- <div class="responsive">
+                                <div class="gallery zoom_Left_Side">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Contacts edit page" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This page allows you to edit contacts and see the Object Stores associated with that
+                                        contact.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Contacts page" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This shows all the contacts within the system. There will be hundreds once this goes
+                                        live.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Database page" width="600" height="600">
+                                    </a>
+                                    <div class="desc">This shows all the databases within the system. There will be many more once this goes
+                                        live.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">Responsive pages shown in mobile form-factor.</div>
+                                </div>
+                            </div>
+
+
+                            <div class="clearfix"> </div> -->
 
                         </div>
                     </div>
@@ -634,7 +752,7 @@ Author: Deven Swiergiel
                     </div>
 
                     <!-- Rental Estimator Tab -->
-                    <div role="tabpanel" class="tab-pane fade" id="RentalEstimator" aria-labelledby="RentalEstimator-tab">
+                    <div role="tabpanel" class="tab-pane fade " id="RentalEstimator" aria-labelledby="RentalEstimator-tab">
                         <div class="w3_tab_img">
 
                             <div class="container">
