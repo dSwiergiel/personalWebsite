@@ -226,6 +226,7 @@ margin-top:10px;
 margin-left:4px;
 margin-right:4px;
 display: inline-block;
+
 }
 #gravity-y{
 transform: rotateZ(90deg);
@@ -243,12 +244,12 @@ text-align: center;
 font-weight:600;
 border: solid 3px #606c7f;;
 cursor: pointer;
-border-radius: 5px;
+border-radius: 0px;
 transition: all .3s;
 }
 .close:hover, .stop-g:hover, .start-g:hover{
 transition: all .5s;
-border-radius: 12px;
+border-radius: 0px;
 background:#606c7f;;
 color: #fff;
 }

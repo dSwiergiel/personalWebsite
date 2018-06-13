@@ -216,7 +216,7 @@ body {
     background: url(../images/1280x800-134779-os-x-wallpapers-location.jpg) no-repeat 0px 0;
     background-size: cover;
     padding: 1em 0 5em;
-    box-shadow: 100vw 100vh rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 100vw 100vh rgba(0, 0, 0, .2) inset; 
 }
 
 .agile-logo {
@@ -609,7 +609,7 @@ body {
 .education {
     background: url(../images/books2.jpg) no-repeat 0px 0px;
     background-size: cover;
-    box-shadow: 100vw 100vh rgba(0, 0, 0, 0.8) inset;
+    box-shadow: 100vw 100vh rgba(0, 0, 0, 0.5) inset;
 }
 
 .jarallax {
