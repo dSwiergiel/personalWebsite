@@ -307,9 +307,9 @@ Author: Deven Swiergiel
                         has been both a challenging yet rewarding experience and I am lucky to have such a great group of
                         friends who have helped me along the way.</p>
 
-                    <p>When I'm not developing software I enjoy working with my 3D printer that I built a little while back. I've used
-                        it to print many parts for around the house as well as custom parts for some of my personal electronic
-                        projects.
+                    <p>When I'm not developing software I enjoy working with my 3D printer that I built a little while back.
+                        I've used it to print many parts for around the house as well as custom parts for some of my personal
+                        electronic projects.
                     </p>
 
                     <p>When I'm not creating I'm likely hanging with friends, enjoying outdoor activities, or sleeping!</p>
@@ -495,11 +495,15 @@ Author: Deven Swiergiel
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
 
-                    <li role="presentation" class="active">
-                        <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Pi Relay Controller</a>
+                    <li role="presentation">
+                        <a href="#OpenFOIL" id="OpenFoil-tab" role="tab" data-toggle="tab" aria-controls="OpenFoil">Open FOIL NY</a>
+                    </li>
+
+                    <li role="presentation"  class="active">
+                        <a href="#RentalAnalysis" id="RentalAnalysis-tab" role="tab" data-toggle="tab" aria-controls="RentalAnalysis">Rental Analysis Tool</a>
                     </li>
                     <li role="presentation">
-                        <a href="#RentalAnalysis" id="RentalAnalysis-tab" role="tab" data-toggle="tab" aria-controls="RentalAnalysis">Rental Analysis Tool</a>
+                        <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Pi Relay Controller</a>
                     </li>
                     <!-- <li role="presentation">
                         <a href="#NYSITS" id="NYSITS-tab" role="tab" data-toggle="tab" aria-controls="NYSITS">NYS ITS</a>
@@ -526,7 +530,30 @@ Author: Deven Swiergiel
                 <div id="myTabContent" class="tab-content">
 
                     <!-- PI Relay Controller tab  -->
-                    <div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+                    <div role="tabpanel" class="tab-pane fade " id="OpenFOIL" aria-labelledby="OpenFOIL">
+                        <div class="w3_tab_img">
+
+
+                            <div class="container">
+                                <p class="paragraph"><a target="_blank" href="https://openfoil.ny.gov/#/newfoilrequest">Open FOIL NY</a> is my current project at NYS where I work as the Font-end Lead. 
+                                    Open FOIL NY is a complete front-to-back system that allows the public to request all sorts of data and information regarding the State,
+                                     internal on-goings, budgets, etc. <br><br><a target="_blank" href="https://www.governor.ny.gov/news/governor-cuomo-announces-open-foil-ny">Governor Cuomo's recent press release on Open FOIL NY</a>  explains everything but in short, prior to the launch of Open FOIL NY, there was no centralized location to obtain agency-specific information, 
+                                     no standardized form, and the FOIL experience varied from State agency to agency. Open FOIL NY now provides New Yorkers with a consistent and convenient
+                                      experience for requesting public records and obtaining information.
+                                     Open FOIL NY also provides state employees with an efficient system to track and fulfill FOIL requests saving on time and resources.
+                                      <br><br>Unfortunately, I am only able to show you the <a target="_blank" href="https://openfoil.ny.gov/#/newfoilrequest">public facing form</a>  I built using Angular 4. The internal workflow system that FOIL Specialists and lawyers use to manage FOILs and documents involves sensitive private data.</p>
+                            </div>
+
+                            <div class="clearfix"> </div>
+                            <div class="container">
+                                <div class="border"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- PI Relay Controller tab  -->
+                    <div role="tabpanel" class="tab-pane fade " id="home-main" aria-labelledby="home-tab">
                         <div class="w3_tab_img">
 
 
@@ -586,17 +613,18 @@ Author: Deven Swiergiel
                     </div>
 
                     <!-- Rental Analysis Calculator tab  -->
-                    <div role="tabpanel" class="tab-pane fade" id="RentalAnalysis" aria-labelledby="RentalAnalysis-tab">
+                    <div role="tabpanel" class="tab-pane fade in active" id="RentalAnalysis" aria-labelledby="RentalAnalysis-tab">
                         <div class="w3_tab_img">
 
 
                             <div class="container">
                                 <p class="paragraph">I invest in real estate on the side and this is a tool I created to help easily analyze potential
                                     properties quickly. The next best competitor to this tool is only available to members
-                                    who pay $40 a month on a popular RE investing site. This is free (although the ad placement on the tool does generate me some beer
-                                    money) and has 90% of the features
-                                    of that other tool. It was created using bootstrap with custom CSS on top and a popular data visualization
-                                    framework called Highcharts. This tool generates amortization schedules and charts, a cashflow break-even chart, a future projection table, and much more.
+                                    who pay $40 a month on a popular RE investing site. This is free (although the ad placement
+                                    on the tool does generate me some beer money) and has 90% of the features of that other
+                                    tool. It was created using bootstrap with custom CSS on top and a popular data visualization
+                                    framework called Highcharts. This tool generates amortization schedules and charts, a
+                                    cashflow break-even chart, a future projection table, and much more.
                                     <a target="_blank" href="http://devenswiergiel.com/rentalanalysis">Click here to try it out!</a>
                                 </p>
                             </div>
@@ -616,7 +644,8 @@ Author: Deven Swiergiel
                                     <a target="_blank" href="images/rentalanalysis_purchase.png">
                                         <img src="images/rentalanalysis_purchase.png" alt="Purchase info tab of real estate analysis tool" width="600" height="auto">
                                     </a>
-                                    <div class="desc">This tab contains all purchase and financing information. An upcoming release will support hard-money interest-only loans from private lenders.
+                                    <div class="desc">This tab contains all purchase and financing information. An upcoming release will support
+                                        hard-money interest-only loans from private lenders.
                                     </div>
                                 </div>
                             </div>
@@ -636,7 +665,8 @@ Author: Deven Swiergiel
                                     <a target="_blank" href="images/rentalanalysis_results.png">
                                         <img src="images/rentalanalysis_results.png" alt="Results of calculations of real estate analysis tool" width="600" height="600">
                                     </a>
-                                    <div class="desc">This displays the results after all calculations have been made. Other results tabs show more metrics and visualization of the property.</div>
+                                    <div class="desc">This displays the results after all calculations have been made. Other results tabs show
+                                        more metrics and visualization of the property.</div>
                                 </div>
                             </div>
 
@@ -996,9 +1026,9 @@ Author: Deven Swiergiel
         <!-- Grey out submit button while it's disabled(until user verifies through google's reCAPTCHA)-->
         <style>
             html input[disabled] {
-                color: white!important;
-                background-color: grey!important;
-                border: grey!important;
+                color: white !important;
+                background-color: grey !important;
+                border: grey !important;
                 /* background-color: #004080!important;
                 border: #004080!important; */
             }

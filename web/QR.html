@@ -482,8 +482,8 @@ Author: Deven Swiergiel
         </div>
         <!-- //experience -->
 
-        <!-- projects -->
-        <div class="projects" id="projects">
+         <!-- projects -->
+         <div class="projects" id="projects">
             <div class="container">
                 <div class="border" style="margin-bottom: 40px;"></div>
                 <div class="w3-agileits-education-heading experience-heading">
@@ -494,16 +494,20 @@ Author: Deven Swiergiel
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                 <ul id="myTab" class="nav nav-tabs" role="tablist">
 
-                    <li role="presentation" class="active">
-                        <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Pi Relay Controller</a>
+                    <li role="presentation">
+                        <a href="#OpenFOIL" id="OpenFoil-tab" role="tab" data-toggle="tab" aria-controls="OpenFoil">Open FOIL NY</a>
+                    </li>
+
+                    <li role="presentation"  class="active">
+                        <a href="#RentalAnalysis" id="RentalAnalysis-tab" role="tab" data-toggle="tab" aria-controls="RentalAnalysis">Rental Analysis Tool</a>
                     </li>
                     <li role="presentation">
-                        <a href="#RentalAnalysis" id="RentalAnalysis-tab" role="tab" data-toggle="tab" aria-controls="RentalAnalysis">Rental Analysis Tool</a>
+                        <a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Pi Relay Controller</a>
                     </li>
                     <!-- <li role="presentation">
                         <a href="#NYSITS" id="NYSITS-tab" role="tab" data-toggle="tab" aria-controls="NYSITS">NYS ITS</a>
                     </li> -->
-                    <li role="presentation" >
+                    <li role="presentation">
                         <a href="#RentalEstimator" role="tab" id="RentalEstimator-tab" data-toggle="tab" aria-controls="learning">Rental Estimator</a>
                     </li>
                     <li role="presentation">
@@ -525,52 +529,81 @@ Author: Deven Swiergiel
                 <div id="myTabContent" class="tab-content">
 
                     <!-- PI Relay Controller tab  -->
-                    
-                    <div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+                    <div role="tabpanel" class="tab-pane fade " id="OpenFOIL" aria-labelledby="OpenFOIL">
                         <div class="w3_tab_img">
 
-                            
-                                <div class="container">
-                                    <p class="paragraph">While this looks quite simple, this was one of my most involved personal projects yet. This app is connected to a Raspberry Pi Zero W which is connected to a 2-channel relay and it allows me to control anything plugged into it from anywhere in the world. I made this because my apartment has electric heat which is expensive. So I don't want to run it all day while I'm not home, but I want it to be warm when I come home. With this, I can turn it on an hour before I come home. This project involves a MySQL database to store authorized users like myself and my girlfriend, PHP backend, ajax calls, a CRON job, MD5 password encryption, and bootstrap.</p>
-                                </div>
 
-                                <div class="responsive ">
-                                    <div class="gallery  zoom_Left_Side">
-                                        <a target="_blank" href="images/relay_login.png">
-                                            <img src="images/relay_login.png" alt="Contacts page" width="600" height="auto">
-                                        </a>
-                                        <div class="desc">This is the login page so that only I can control the heat.
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="container">
+                                <p class="paragraph"><a target="_blank" href="https://openfoil.ny.gov/#/newfoilrequest">Open FOIL NY</a> is my current project at NYS where I work as the Font-end Lead. 
+                                    Open FOIL NY is a complete front-to-back system that allows the public to request all sorts of data and information regarding the State,
+                                     internal on-goings, budgets, etc. <br><br><a target="_blank" href="https://www.governor.ny.gov/news/governor-cuomo-announces-open-foil-ny">Governor Cuomo's recent press release on Open FOIL NY</a>  explains everything but in short, prior to the launch of Open FOIL NY, there was no centralized location to obtain agency-specific information, 
+                                     no standardized form, and the FOIL experience varied from State agency to agency. Open FOIL NY now provides New Yorkers with a consistent and convenient
+                                      experience for requesting public records and obtaining information.
+                                     Open FOIL NY also provides state employees with an efficient system to track and fulfill FOIL requests saving on time and resources.
+                                      <br><br>Unfortunately, I am only able to show you the <a target="_blank" href="https://openfoil.ny.gov/#/newfoilrequest">public facing form</a>  I built using Angular 4. The internal workflow system that FOIL Specialists and lawyers use to manage FOILs and documents involves sensitive private data.</p>
+                            </div>
 
-                                <div class="responsive ">
-                                    <div class="gallery zoom_center">
-                                        <a target="_blank" href="images/relay_main.png">
-                                            <img src="images/relay_main.png" alt="Database page" width="600" height="600">
-                                        </a>
-                                        <div class="desc">After login, you are presented with a control panel.
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="clearfix"> </div>
+                            <div class="container">
+                                <div class="border"></div>
+                            </div>
 
-                                <div class="responsive ">
-                                    <div class="gallery zoom_Right_Side">
-                                        <a target="_blank" href="images/relay_timer.png">
-                                            <img src="images/relay_timer.png" alt="Image of all pages on mobile device" width="600" height="600">
-                                        </a>
-                                        <div class="desc">It also has a timer, so I can have it turn on or off at a certain time.</div>
+                        </div>
+                    </div>
+
+                    <!-- PI Relay Controller tab  -->
+                    <div role="tabpanel" class="tab-pane fade " id="home-main" aria-labelledby="home-tab">
+                        <div class="w3_tab_img">
+
+
+                            <div class="container">
+                                <p class="paragraph">While this looks quite simple, this was one of my most involved personal projects yet. This
+                                    app is connected to a Raspberry Pi Zero W which is connected to a 2-channel relay and
+                                    it allows me to control anything plugged into it from anywhere in the world. I made this
+                                    because my apartment has electric heat which is expensive. So I don't want to run it
+                                    all day while I'm not home, but I want it to be warm when I come home. With this, I can
+                                    turn it on an hour before I come home. This project involves a MySQL database to store
+                                    authorized users like myself and my girlfriend, PHP backend, ajax calls, a CRON job,
+                                    MD5 password encryption, and bootstrap.</p>
+                            </div>
+
+                            <div class="responsive ">
+                                <div class="gallery  zoom_Left_Side">
+                                    <a target="_blank" href="images/relay_login.png">
+                                        <img src="images/relay_login.png" alt="Contacts page" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This is the login page so that only I can control the heat.
                                     </div>
                                 </div>
-                                <div class="responsive ">
-                                    <div class="gallery zoom_Right_Side">
-                                        <a target="_blank" href="images/relay_mobile.png">
-                                            <img src="images/relay_mobile.png" alt="Image of all pages on mobile device" width="600" height="600">
-                                        </a>
-                                        <div class="desc">And it is obviously mobile friendly.</div>
+                            </div>
+
+                            <div class="responsive ">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/relay_main.png">
+                                        <img src="images/relay_main.png" alt="Database page" width="600" height="600">
+                                    </a>
+                                    <div class="desc">After login, you are presented with a control panel.
                                     </div>
                                 </div>
-                            
+                            </div>
+
+                            <div class="responsive ">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/relay_timer.png">
+                                        <img src="images/relay_timer.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">It also has a timer, so I can have it turn on or off at a certain time.</div>
+                                </div>
+                            </div>
+                            <div class="responsive ">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/relay_mobile.png">
+                                        <img src="images/relay_mobile.png" alt="Image of all pages on mobile device" width="600" height="600">
+                                    </a>
+                                    <div class="desc">And it is obviously mobile friendly.</div>
+                                </div>
+                            </div>
+
 
 
                             <div class="clearfix"> </div>
@@ -578,65 +611,69 @@ Author: Deven Swiergiel
                         </div>
                     </div>
 
-                                        <!-- Rental Analysis Calculator tab  -->
-                                        <div role="tabpanel" class="tab-pane fade" id="RentalAnalysis" aria-labelledby="RentalAnalysis-tab">
-                                            <div class="w3_tab_img">
-                    
-                    
-                                                <div class="container">
-                                                    <p class="paragraph">I invest in real estate on the side and this is a tool I created to help easily analyze potential
-                                                        properties quickly. The next best competitor to this tool is only available to members
-                                                        who pay $40 a month on a popular RE investing site. This is free (although the ad placement on the tool does generate me some beer
-                                                        money) and has 90% of the features
-                                                        of that other tool. It was created using bootstrap with custom CSS on top and a popular data visualization
-                                                        framework called Highcharts. This tool generates amortization schedules and charts, a cashflow break-even chart, a future projection table, and much more.
-                                                        <a target="_blank" href="http://devenswiergiel.com/rentalanalysis">Click here to try it out!</a>
-                                                    </p>
-                                                </div>
-                    
-                                                <div class="responsive">
-                                                    <div class="gallery zoom_Left_Side">
-                                                        <a target="_blank" href="images/rentalanalysis_property.png">
-                                                            <img src="images/rentalanalysis_property.png" alt="Property info tab of real estate analysis tool" width="600" height="auto">
-                                                        </a>
-                                                        <div class="desc">This is the page you see when you open the app. Basic property info is entered here.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="responsive">
-                                                    <div class="gallery zoom_center">
-                                                        <a target="_blank" href="images/rentalanalysis_purchase.png">
-                                                            <img src="images/rentalanalysis_purchase.png" alt="Purchase info tab of real estate analysis tool" width="600" height="auto">
-                                                        </a>
-                                                        <div class="desc">This tab contains all purchase and financing information. An upcoming release will support hard-money interest-only loans from private lenders.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="responsive">
-                                                    <div class="gallery zoom_center">
-                                                        <a target="_blank" href="images/rentalanalysis_rental.png">
-                                                            <img src="images/rentalanalysis_rental.png" alt="Rental info tab of real estate analysis tool" width="600" height="600">
-                                                        </a>
-                                                        <div class="desc">This tab contains all of the rental income and expenses.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="responsive">
-                                                    <div class="gallery zoom_Right_Side">
-                                                        <a target="_blank" href="images/rentalanalysis_results.png">
-                                                            <img src="images/rentalanalysis_results.png" alt="Results of calculations of real estate analysis tool" width="600" height="600">
-                                                        </a>
-                                                        <div class="desc">This displays the results after all calculations have been made. Other results tabs show more metrics and visualization of the property.</div>
-                                                    </div>
-                                                </div>
-                    
-                                                <div class="clearfix"> </div>
-                    
-                                            </div>
-                                        </div>
+                    <!-- Rental Analysis Calculator tab  -->
+                    <div role="tabpanel" class="tab-pane fade in active" id="RentalAnalysis" aria-labelledby="RentalAnalysis-tab">
+                        <div class="w3_tab_img">
+
+
+                            <div class="container">
+                                <p class="paragraph">I invest in real estate on the side and this is a tool I created to help easily analyze potential
+                                    properties quickly. The next best competitor to this tool is only available to members
+                                    who pay $40 a month on a popular RE investing site. This is free (although the ad placement
+                                    on the tool does generate me some beer money) and has 90% of the features of that other
+                                    tool. It was created using bootstrap with custom CSS on top and a popular data visualization
+                                    framework called Highcharts. This tool generates amortization schedules and charts, a
+                                    cashflow break-even chart, a future projection table, and much more.
+                                    <a target="_blank" href="http://devenswiergiel.com/rentalanalysis">Click here to try it out!</a>
+                                </p>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Left_Side">
+                                    <a target="_blank" href="images/rentalanalysis_property.png">
+                                        <img src="images/rentalanalysis_property.png" alt="Property info tab of real estate analysis tool" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This is the page you see when you open the app. Basic property info is entered here.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/rentalanalysis_purchase.png">
+                                        <img src="images/rentalanalysis_purchase.png" alt="Purchase info tab of real estate analysis tool" width="600" height="auto">
+                                    </a>
+                                    <div class="desc">This tab contains all purchase and financing information. An upcoming release will support
+                                        hard-money interest-only loans from private lenders.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_center">
+                                    <a target="_blank" href="images/rentalanalysis_rental.png">
+                                        <img src="images/rentalanalysis_rental.png" alt="Rental info tab of real estate analysis tool" width="600" height="600">
+                                    </a>
+                                    <div class="desc">This tab contains all of the rental income and expenses.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="responsive">
+                                <div class="gallery zoom_Right_Side">
+                                    <a target="_blank" href="images/rentalanalysis_results.png">
+                                        <img src="images/rentalanalysis_results.png" alt="Results of calculations of real estate analysis tool" width="600" height="600">
+                                    </a>
+                                    <div class="desc">This displays the results after all calculations have been made. Other results tabs show
+                                        more metrics and visualization of the property.</div>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"> </div>
+
+                        </div>
+                    </div>
+
 
                     <!-- NYS ITS tab  -->
                     <!-- <div role="tabpanel" class="tab-pane fade" id="NYSITS" aria-labelledby="NYSITS-tab">
@@ -959,14 +996,14 @@ Author: Deven Swiergiel
                 </div>
             </div>
 
-            <script src="js/jquery.tools.min.js"></script>
+            <!-- <script src="js/jquery.tools.min.js"></script>
             <script src="js/jquery.mobile.custom.min.js"></script>
             <script src="js/jquery.cm-overlay.js"></script>
             <script>
                 $(document).ready(function () {
                     $('.cm-overlay').cmOverlay();
                 });
-            </script>
+            </script> -->
 
         </div>
         <!-- //projects -->
